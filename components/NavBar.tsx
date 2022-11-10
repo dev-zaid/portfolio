@@ -8,9 +8,8 @@ export default function NavBar() {
   const onMouseLeave = () => setIsHovered(false);
   return (
     <nav
-      className="sticky flex justify-between items-center h-15 max-w-screen
-            bg-dark-background bg-opacity-50 font-black"
-      style={{ backdropFilter: "blur(20px)" }}
+      className="sticky top-0 left-0 flex justify-between items-center h-15 max-w-screen
+            font-black z-20 backdrop-blur-md bg-dark-background bg-opacity-50"
     >
       {/* <div className="flex justify-space items-center">
         <div className="m-5 h-10">

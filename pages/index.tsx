@@ -1,20 +1,24 @@
 import Head from "next/head";
 import Image from "next/image";
+import React from "react";
 import About from "../components/About";
 import Landing from "../components/Landing";
 import NavBar from "../components/NavBar";
+import Skills from "../components/Skills";
+import createScrollSnap from "scroll-snap";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className="snap-mandatory snap-y min-h-screen min-w-screen">
+    <div className="main-container min-h-screen min-w-screen">
       <div>
         <div className="snap-start h-screen z-10">
           <Landing />
         </div>
+        <NavBar />
         <div className="snap-start h-screen z-0">
-          <NavBar />
           <About />
+          <Skills />
         </div>
         <footer className={styles.footer}>
           <a
