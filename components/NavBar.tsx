@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function NavBar() {
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnter = () => setIsHovered(true);
+  const onMouseLeave = () => setIsHovered(false);
   return (
     <nav
       className="sticky flex justify-between items-center h-15 max-w-screen
@@ -14,19 +18,39 @@ export default function NavBar() {
         </div>
         <h1 className="text-md md:text-3xl hover:text-primary">Zaid</h1>
       </div> */}
-      <div className="m-5 h-10">
-        <Image src="/face.png" alt="Memoji" height={50} width={50} />
+      <div
+        className="m-5 h-10"
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      >
+        {isHovering ? (
+          <Image
+            className=""
+            src="/memoji.png"
+            alt="Memoji"
+            height={50}
+            width={50}
+          />
+        ) : (
+          <Image
+            className=""
+            src="/face.png"
+            alt="Memoji"
+            height={50}
+            width={50}
+          />
+        )}
       </div>
       <div className="flex justify-end mx-10">
         <div className="flex justify-center items-center mx-4">
-          <Link href="/dashboard" passHref>
+          <Link href="/skills" passHref>
             <h3 className="hover:-translate-y-0.5 text-md md:text-xl cursor-pointer duration-200 hover:text-primary">
               Skills
             </h3>
           </Link>
         </div>
         <div className="flex justify-center items-center mx-4">
-          <Link href="/users" passHref>
+          <Link href="/projects" passHref>
             <h3 className="hover:-translate-y-0.5 text-md md:text-xl cursor-pointer duration-200 hover:text-primary">
               Projects
             </h3>
