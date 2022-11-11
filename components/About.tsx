@@ -215,7 +215,7 @@ export default function About() {
                 >
                   <Fade>
                     <Image
-                      className="select-none"
+                      className="select-none cursor-default"
                       width={40}
                       height={40}
                       alt={"Zaid"}

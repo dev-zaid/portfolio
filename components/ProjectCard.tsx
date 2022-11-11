@@ -6,13 +6,11 @@ import { Project } from "./Projects";
 const ProjectCard = (props: Project) => {
   return (
     <div className="select-none rounded-lg shadow-md max-w-sm bg-dark-background  bg-opacity-50 backdrop-blur-sm">
-      <a href={props.link} target="blank">
-        <img
-          className="rounded-t-lg transition ease-in-out hover:rounded-md  hover:scale-125 cursor-default"
-          src={`projects/${props.name}/main.png`}
-          alt="Hello"
-        />
-      </a>
+      <img
+        className="rounded-t-lg transition ease-in-out hover:rounded-md  hover:scale-125 cursor-default"
+        src={`projects/${props.name}/main.png`}
+        alt="Hello"
+      />
       <div className="p-5">
         <a href={props.link} target="blank">
           <h5 className="hover:text-primary mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

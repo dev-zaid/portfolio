@@ -17,7 +17,7 @@ const projectData: any = [
     tag: "An Internal Portal",
     description:
       "It is an internal portal for a college event. This portal offers provides the admin to score to participants and get in-depth information about the ongoing events. It also provides information about the registered participants.",
-    link: "",
+    link: "https://srmkzilla.net/",
     stack: ["NextJS", "NextAPI", "TailwindCSS", "JWT", "TypeScript"],
   },
   {
@@ -49,7 +49,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="pt-[140px] select-none -z-10 bg-gradient-to-b to-dark-background from-[#1F1F22] backdrop-blur-sm min-h-[100vh] min-w-screen "
+      className="pt-[120px] select-none -z-10 bg-gradient-to-b to-dark-background from-[#1F1F22] backdrop-blur-sm min-h-[100vh] min-w-screen "
     >
       <div className=" flex flex-col items-center justify-center min-w-screen">
         <Fade duration={2000}>
