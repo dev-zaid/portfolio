@@ -40,7 +40,7 @@ const computePosition = (
   };
 };
 
-const createTag = (idx: number, text: string, size: number) => {
+const CreateTag = (idx: number, text: string, size: number) => {
   const tagRef = React.useRef<HTMLDivElement | null>(null);
 
   return {
@@ -69,7 +69,7 @@ interface ItemProps {
 
 const createInitialState = (size: number) => {
   return texts.map((text, i) => {
-    return createTag(i, text, size);
+    return CreateTag(i, text, size);
   });
 };
 
@@ -85,7 +85,7 @@ const depth = 2 * radius;
 
 export default function About() {
   const tagCloudRef = React.useRef<HTMLDivElement | null>(null);
-  const [items, setItems] = React.useState<ItemProps[]>(
+  const [Items, setItems] = React.useState<ItemProps[]>(
     createInitialState(size)
   );
 
@@ -110,7 +110,7 @@ export default function About() {
     ];
 
     setItems((prev: any[]) => {
-      const items = prev.map((item) => {
+      const Items = prev.map((item) => {
         const rx1 = item.x;
         const ry1 = item.y * sc[1] + item.z * -sc[0];
         const rz1 = item.y * sc[0] + item.z * sc[1];
@@ -143,7 +143,7 @@ export default function About() {
         }
       });
 
-      return items;
+      return Items;
     });
   }, []);
 
@@ -156,7 +156,7 @@ export default function About() {
 
   return (
     <div id="about" className="flex backdrop-blur-sm min-h-[80vh] z-0">
-      <div className="flex flex-col items-start justify-center p-10 min-w-max backdrop-blur-sm">
+      <div className="flex flex-col Items-start justify-center p-10 min-w-max backdrop-blur-sm">
         <Fade duration={2000}>
           <h1 className="select-none text-[50px] font-black text-white shadow-md">
             About me
@@ -177,13 +177,13 @@ export default function About() {
                 Minimalism and Blues.{" "}
               </p>
               <br />
-              I'm naturally curious, and perpetually working on improving my
-              chops one problem at a time.{" "}
+              I&apos;m naturally curious, and perpetually working on improving
+              my chops one problem at a time.{" "}
             </h1>
           </div>
         </Fade>
       </div>
-      <div className="flex flex-col items-center justify-center w-full h-full">
+      <div className="flex flex-col Items-center justify-center w-full h-full">
         <div
           ref={tagCloudRef}
           className="tag-cloud"
@@ -200,7 +200,7 @@ export default function About() {
             height: `${2 * radius}px`,
           }}
         >
-          {items.map((item) => {
+          {Items.map((item) => {
             return (
               <>
                 <span

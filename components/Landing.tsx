@@ -28,10 +28,7 @@ export default function Landing() {
                 </span>
               ))}
               <span> </span>
-              <span
-                key={letter}
-                className="inline-block transition-all hover:-translate-y-2 hover:duration-150 duration-200 hover:scale-110 ease-in-out  hover:text-white text-primary "
-              >
+              <span className="inline-block transition-all hover:-translate-y-2 hover:duration-150 duration-200 hover:scale-110 ease-in-out  hover:text-white text-primary ">
                 {" "}
               </span>
               {"Zaid".split("").map((letter) => (
