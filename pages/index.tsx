@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import About from "../components/About";
 import Landing from "../components/Landing";
 import NavBar from "../components/NavBar";
@@ -8,8 +8,30 @@ import Skills from "../components/Skills";
 import createScrollSnap from "scroll-snap";
 import styles from "../styles/Home.module.css";
 import Projects from "../components/Projects";
+import { useState } from "react";
 
 export default function Home() {
+  const [windowWidth, setWidth] = useState(1400);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  });
+
+  console.log(windowWidth);
+  if (windowWidth < 1350) {
+    return (
+      <div>
+        <div className="bg-gradient-to-t to-dark-background from-[#1F1F22] p-[40px] flex flex-col items-center justify-center min-h-screen min-w-screen">
+          <Image src={"/sad-memoji.png"} alt="Zaid" width={200} height={200} />
+
+          <span className="text-3xl font-bold text-center">
+            This website is not optimised for small screens yet. <br />
+            Please open on a PC/Laptop
+          </span>
+        </div>
+      </div>
+    );
+  }
   return (
     <div className="main-container min-h-screen min-w-screen">
       <div>

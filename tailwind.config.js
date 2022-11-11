@@ -7,6 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        phone: "300px",
+        tablet: "640px",
+        // => @media (min-width: 640px) { ... }
+
+        // => @media (min-width: 1024px) { ... }
+
+        desktop: "1350px",
+        // => @media (min-width: 1280px) { ... }
+      },
       scale: {
         125: "1.25",
         175: "1.75",
