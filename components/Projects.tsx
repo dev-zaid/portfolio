@@ -62,7 +62,7 @@ export default function Projects() {
       <Fade duration={3000}>
         <div className="grid grid-cols-3 place-items-center content-center my-10">
           {projectData.map((project: Project) => {
-            return <ProjectCard {...project} />;
+            return <ProjectCard key={project.name} {...project} />;
           })}
         </div>
       </Fade>

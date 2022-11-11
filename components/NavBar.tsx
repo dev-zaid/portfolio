@@ -57,7 +57,11 @@ export default function NavBar() {
         </div>
         <div className="flex item-center justify-center pl-10">
           <div className="mx-4">
-            <a target="_blank" href="https://github.com/dev-zaid">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/dev-zaid"
+            >
               <svg
                 className="fill-white hover:-translate-y-0.5 text-md md:text-xl cursor-pointer duration-200 hover:fill-primary"
                 xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +74,11 @@ export default function NavBar() {
             </a>
           </div>
           <div className="mx-4">
-            <a target="_blank" href="https://linkedin.com/in/dev-zaid">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://linkedin.com/in/dev-zaid"
+            >
               <svg
                 className="fill-white hover:-translate-y-0.5 text-md md:text-xl cursor-pointer duration-200 hover:fill-primary"
                 width="30"
@@ -85,6 +93,7 @@ export default function NavBar() {
           <div className="mx-4">
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://drive.google.com/file/d/1EQjEEsac-A0r7Dy1ObBOguf-vcFeZmWI/view?usp=drivesdk"
             >
               <svg

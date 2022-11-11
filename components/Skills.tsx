@@ -36,7 +36,7 @@ export default function Skills() {
 
         <div className="grid grid-cols-9 gap-x-[90px] gap-y-[20px] min-w-screen mx-20 place-content-center place-items-center mt-10">
           {texts.map((skill, i) => {
-            return <LogoCard name={skill} sno={i} />;
+            return <LogoCard key={skill} name={skill} sno={i} />;
           })}
         </div>
       </div>

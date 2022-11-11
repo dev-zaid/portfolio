@@ -10,42 +10,63 @@ export default function Landing() {
           <div className="m-24 cursor-default">
             <div>
               {"Hi,".split("").map((letter) => (
-                <span className="inline-block hover:-translate-y-2 hover:duration-150 transition-all duration-200 hover:scale-110 hover:text-primary">
+                <span
+                  key={letter}
+                  className="inline-block hover:-translate-y-2 hover:duration-150 transition-all duration-200 hover:scale-110 hover:text-primary"
+                >
                   {letter}
                 </span>
               ))}
             </div>
             <div>
               {"I'm".split("").map((letter) => (
-                <span className="hover:text-primary inline-block transition-all duration-200 hover:scale-110">
+                <span
+                  key={letter}
+                  className="hover:text-primary inline-block transition-all duration-200 hover:scale-110"
+                >
                   {letter}
                 </span>
               ))}
               <span> </span>
-              <span className="inline-block transition-all hover:-translate-y-2 hover:duration-150 duration-200 hover:scale-110 ease-in-out  hover:text-white text-primary ">
+              <span
+                key={letter}
+                className="inline-block transition-all hover:-translate-y-2 hover:duration-150 duration-200 hover:scale-110 ease-in-out  hover:text-white text-primary "
+              >
                 {" "}
               </span>
               {"Zaid".split("").map((letter) => (
-                <span className="inline-block transition-all duration-200 hover:scale-110 ease-in-out hover:text-white text-primary hover:-translate-y-2 hover:duration-150">
+                <span
+                  key={letter}
+                  className="inline-block transition-all duration-200 hover:scale-110 ease-in-out hover:text-white text-primary hover:-translate-y-2 hover:duration-150"
+                >
                   {letter}
                 </span>
               ))}
             </div>
             <div>
               {"a".split("").map((letter) => (
-                <span className="hover:text-primary inline-block transition-all duration-200 hover:scale-110 hover:-translate-y-2 hover:duration-150">
+                <span
+                  key={letter}
+                  className="hover:text-primary inline-block transition-all duration-200 hover:scale-110 hover:-translate-y-2 hover:duration-150"
+                >
                   {letter}
                 </span>
               ))}
               <span> </span>
               {"web".split("").map((letter) => (
-                <span className="hover:text-primary inline-block transition-all duration-200 hover:scale-110 hover:-translate-y-2 hover:duration-150">
+                <span
+                  key={letter}
+                  className="hover:text-primary inline-block transition-all duration-200 hover:scale-110 hover:-translate-y-2 hover:duration-150"
+                >
                   {letter}
                 </span>
               ))}
               <span> </span>
               {"developer".split("").map((letter) => (
-                <span className="hover:text-primary inline-block transition-all duration-200 hover:scale-110 hover:-translate-y-2 hover:duration-150">
+                <span
+                  key={letter}
+                  className="hover:text-primary inline-block transition-all duration-200 hover:scale-110 hover:-translate-y-2 hover:duration-150"
+                >
                   {letter}
                 </span>
               ))}
