@@ -7,8 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      scale: {
+        175: "1.75",
+        200: "2",
+      },
       colors: {
         "dark-background": "#0A0A0B",
+        "black-elevated": "#0A0A0B",
         elevated: "#252939",
         "elevated-hover": "#212129",
         primary: "#F9A828",
