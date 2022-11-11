@@ -7,6 +7,7 @@ import NavBar from "../components/NavBar";
 import Skills from "../components/Skills";
 import createScrollSnap from "scroll-snap";
 import styles from "../styles/Home.module.css";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -18,7 +19,12 @@ export default function Home() {
         <NavBar />
         <div className="flex flex-col snap-start h-screen z-0">
           <About />
+        </div>
+        <div>
           <Skills />
+        </div>
+        <div>
+          <Projects />
         </div>
         <footer className={styles.footer}>
           <a

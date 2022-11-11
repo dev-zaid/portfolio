@@ -22,7 +22,7 @@ const texts: string[] = [
 ];
 export default function Skills() {
   return (
-    <div className="bg-gradient-to-b from-dark-background to-elevated backdrop-blur-sm min-h-[150vh] min-w-screen ">
+    <div className="bg-gradient-to-b from-dark-background to-[#1F1F22] backdrop-blur-sm min-h-[80vh] min-w-screen ">
       <div className="mt-[120px] flex flex-col items-center justify-center min-w-screen">
         <Fade duration={2000}>
           <div>
@@ -30,6 +30,7 @@ export default function Skills() {
           </div>
           <hr className="mt-8 mb-8 w-[100px] h-px bg-primary border-2 border-primary dark:bg-primary" />
         </Fade>
+        
         <div className="grid grid-cols-9 gap-x-[90px] gap-y-[20px] min-w-screen mx-20 place-content-center place-items-center mt-10">
           {texts.map((skill, i) => {
             return <LogoCard name={skill} sno={i} />;

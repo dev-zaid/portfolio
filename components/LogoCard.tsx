@@ -40,7 +40,6 @@ const MemberCard = (props: cardProps) => {
       >
         {props.name}
       </p>
-      {/* <span className="m-5 font-bold">{skill}</span> */}
     </div>
   );
 };
