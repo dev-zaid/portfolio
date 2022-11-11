@@ -42,18 +42,18 @@ export default function NavBar() {
       </div>
       <div className="flex justify-end mx-10">
         <div className="flex justify-center items-center mx-4">
-          <Link href="/skills" passHref>
+          <a href="#skills">
             <h3 className="hover:-translate-y-0.5 text-md md:text-xl cursor-pointer duration-200 hover:text-primary">
               Skills
             </h3>
-          </Link>
+          </a>
         </div>
         <div className="flex justify-center items-center mx-4">
-          <Link href="/projects" passHref>
+          <a href="#projects">
             <h3 className="hover:-translate-y-0.5 text-md md:text-xl cursor-pointer duration-200 hover:text-primary">
               Projects
             </h3>
-          </Link>
+          </a>
         </div>
         <div className="flex item-center justify-center pl-10">
           <div className="mx-4">

@@ -155,7 +155,7 @@ export default function About() {
   }, [tagCloudRef]);
 
   return (
-    <div className="flex backdrop-blur-sm min-h-screen min-w-screen z-0">
+    <div id="about" className="flex backdrop-blur-sm min-h-[80vh] z-0">
       <div className="flex flex-col items-start justify-center p-10 min-w-max backdrop-blur-sm">
         <Fade duration={2000}>
           <h1 className="select-none text-[50px] font-black text-white shadow-md">
@@ -173,8 +173,8 @@ export default function About() {
               <br />
               <p>
                 I take great interest in taking up challenges and learning new
-                tech-stacks. A aesthetics enthusiast, practicing minimalism, and
-                blues music lover in search of flow.{" "}
+                tech-stacks. Searching for a flow in my world of Aesthetics,
+                Minimalism and Blues.{" "}
               </p>
               <br />
               I'm naturally curious, and perpetually working on improving my

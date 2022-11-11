@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       scale: {
+        125: "1.25",
         175: "1.75",
         200: "2",
       },

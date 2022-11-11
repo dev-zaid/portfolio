@@ -10,7 +10,7 @@ const MemberCard = (props: cardProps) => {
 
   return (
     <div
-      className="mt-10 flex flex-col justify-center items-center hover:scale-175 transition-all ease-in-out"
+      className="mt-10 select-none flex flex-col justify-center items-center hover:scale-175 transition-all ease-in-out"
       onMouseOver={() => setCloudShow(true)}
       onMouseOut={() => setCloudShow(false)}
     >
