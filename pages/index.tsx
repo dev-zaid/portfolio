@@ -33,7 +33,7 @@ export default function Home() {
     );
   }
   return (
-    <div className="main-container min-h-screen min-w-screen">
+    <div className="bg-dark-background main-container min-h-screen min-w-screen">
       <div>
         <div className="snap-start h-screen z-10">
           <Landing />

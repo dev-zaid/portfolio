@@ -29,7 +29,7 @@ export default function Skills() {
       <div className=" flex flex-col items-center justify-center min-w-screen">
         <Fade duration={2000}>
           <div>
-            <h1 className="text-5xl font-black">Skills</h1>
+            <h1 className="text-5xl font-black text-white">Skills</h1>
           </div>
           <hr className="mt-8 mb-8 w-[100px] h-px bg-primary border-2 border-primary dark:bg-primary" />
         </Fade>

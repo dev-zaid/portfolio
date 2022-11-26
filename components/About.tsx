@@ -165,7 +165,7 @@ export default function About() {
         <hr className="mt-2 mb-8 w-[180px] h-px bg-primary border-2 border-primary dark:bg-primary" />
         <Fade duration={4000}>
           <div className="w-[700px] select-none">
-            <h1 className="text-left text-xl">
+            <h1 className="text-left text-xl text-white">
               <p>
                 I am a Back-End Developer studying in SRMIST. I am in my 2nd
                 Year and have an year of experience with Web 2.0.
