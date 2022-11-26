@@ -158,7 +158,7 @@ export default function About() {
     <div id="about" className="flex backdrop-blur-sm min-h-[80vh] z-0">
       <div className="flex flex-col Items-start justify-center p-10 min-w-max backdrop-blur-sm">
         <Fade duration={2000}>
-          <h1 className="select-none text-[50px] font-black text-white shadow-md">
+          <h1 className="select-none text-[50px] font-black text-white drop-shadow-md">
             About me
           </h1>
         </Fade>
