@@ -18,20 +18,20 @@ export default function Home() {
   });
 
   console.log(windowWidth);
-  if (windowWidth < 1350) {
-    return (
-      <div>
-        <div className="bg-gradient-to-t to-dark-background from-[#1F1F22] p-[40px] flex flex-col items-center justify-center min-h-screen min-w-screen">
-          <Image src={"/sad-memoji.png"} alt="Zaid" width={200} height={200} />
+  // if (windowWidth < 1000) {
+  //   return (
+  //     <div>
+  //       <div className="bg-gradient-to-t to-dark-background from-[#1F1F22] p-[40px] flex flex-col items-center justify-center min-h-screen min-w-screen">
+  //         <Image src={"/sad-memoji.png"} alt="Zaid" width={200} height={200} />
 
-          <span className="text-3xl font-bold text-center">
-            This website is not optimised for small screens yet. <br />
-            Please open on a PC/Laptop
-          </span>
-        </div>
-      </div>
-    );
-  }
+  //         <span className="text-3xl font-bold text-center">
+  //           This website is not optimised for small screens yet. <br />
+  //           Please open on a PC/Laptop
+  //         </span>
+  //       </div>
+  //     </div>
+  //   );
+  // }
   return (
     <div className="bg-dark-background main-container min-h-screen min-w-screen">
       <div>
