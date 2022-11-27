@@ -6,7 +6,7 @@ export default function Landing() {
         <div className="hidden w-[200px] md:w-[325px] md:flex items-end">
           <Image src={"/memoji.png"} alt="Zaid" width={500} height={500} />
         </div>
-        <div className="flex flex-col justify-center items-center select-none">
+        <div className="flex flex-col lg:px-[150px] justify-center select-none">
           <div className="flex flex-col m-24 cursor-default">
             <div>
               {"Hi,".split("").map((letter) => (

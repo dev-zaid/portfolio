@@ -1,11 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import React, { useEffect } from "react";
 import About from "../components/About";
 import Landing from "../components/Landing";
 import NavBar from "../components/NavBar";
 import Skills from "../components/Skills";
-import createScrollSnap from "scroll-snap";
 import styles from "../styles/Home.module.css";
 import Projects from "../components/Projects";
 import { useState } from "react";
@@ -34,6 +32,10 @@ export default function Home() {
   // }
   return (
     <div className="bg-dark-background main-container min-h-screen min-w-screen">
+      <Head>
+        <title>Zaid | Developer</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div>
         <div className="snap-start h-screen z-10">
           <Landing />
