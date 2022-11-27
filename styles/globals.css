@@ -45,4 +45,23 @@ a {
     color: white;
     background: #0a0a0b;
   }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  @layer base {
+    ::-webkit-scrollbar {
+      @apply w-[6px];
+    }
+
+    ::-webkit-scrollbar-track {
+      @apply bg-dark-background;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      @apply w-[6px] bg-primary rounded-full;
+    }
+  }
 }

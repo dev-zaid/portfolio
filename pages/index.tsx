@@ -39,7 +39,7 @@ export default function Home() {
           <Landing />
         </div>
         <NavBar />
-        <div className="flex flex-col snap-start h-screen z-0">
+        <div className="flex flex-col snap-start z-0">
           <About />
         </div>
         <div>

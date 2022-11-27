@@ -54,13 +54,15 @@ export default function Projects() {
       <div className=" flex flex-col items-center justify-center min-w-screen">
         <Fade duration={2000}>
           <div>
-            <h1 className="text-5xl font-black">Projects</h1>
+            <h1 className="text-[30px] md:text-[45px] lg:text-[50px] font-black text-primary lg:text-white">
+              Projects
+            </h1>
           </div>
-          <hr className="mt-8 mb-8 w-[100px] h-px bg-primary border-2 border-primary dark:bg-primary" />
+          <hr className="mt-6 mb-8 w-[100px] h-px bg-white lg:bg-primary border-2 border-white lg:border-primary" />
         </Fade>
       </div>
       <Fade duration={3000}>
-        <div className="grid grid-cols-3 place-items-center content-center my-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-[90px] lg:grid-cols-3 place-items-center content-center my-10">
           {projectData.map((project: Project) => {
             return <ProjectCard key={project.name} {...project} />;
           })}

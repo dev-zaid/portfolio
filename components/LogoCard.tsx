@@ -10,13 +10,13 @@ const MemberCard = (props: cardProps) => {
 
   return (
     <div
-      className="mt-10 select-none flex flex-col justify-center items-center hover:scale-175 transition-all ease-in-out"
+      className="mt-10 select-none flex flex-col justify-center items-center hover:scale-175 transition-all ease-in-out w-[50px] md:w-[100px]"
       onMouseOver={() => setCloudShow(true)}
       onMouseOut={() => setCloudShow(false)}
     >
       <Fade duration={props.sno * 400}>
         <Image
-          className="select-none "
+          className="select-none"
           width={60}
           height={60}
           alt={"Zaid"}

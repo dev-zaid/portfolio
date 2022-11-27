@@ -155,17 +155,20 @@ export default function About() {
   }, [tagCloudRef]);
 
   return (
-    <div id="about" className="flex backdrop-blur-sm min-h-[80vh] z-0">
-      <div className="flex flex-col Items-start justify-center p-10 min-w-max backdrop-blur-sm">
+    <div
+      id="about"
+      className="flex flex-col lg:flex lg:flex-row backdrop-blur-sm min-h-[80vh] z-0"
+    >
+      <div className="flex flex-col items-center justify-center md:items-center lg:items-start p-10 min-w-screen backdrop-blur-sm">
         <Fade duration={2000}>
-          <h1 className="select-none text-[50px] font-black text-white drop-shadow-md">
+          <h1 className="select-none text-primary lg:text-white text-[30px] md:text-[45px] lg:text-[50px] font-black drop-shadow-md">
             About me
           </h1>
         </Fade>
-        <hr className="mt-2 mb-8 w-[180px] h-px bg-primary border-2 border-primary dark:bg-primary" />
+        <hr className="mt-2 mb-8 w-[100px] lg:w-[180px] h-px bg-white lg:bg-primary border-2 border-white lg:border-primary" />
         <Fade duration={4000}>
-          <div className="w-[700px] select-none">
-            <h1 className="text-left text-xl text-white">
+          <div className="w-[350px] md:w-[700px] select-none">
+            <h1 className="text-center lg:text-left text-lg lg:text-xl text-white">
               <p>
                 I am a Back-End Developer studying in SRMIST. I am in my 2nd
                 Year and have an year of experience with Web 2.0.
@@ -183,7 +186,7 @@ export default function About() {
           </div>
         </Fade>
       </div>
-      <div className="flex flex-col Items-center justify-center w-full h-full">
+      <div className="items-center justify-center hidden md:flex md:flex-col lg:flex lg:flex-col">
         <div
           ref={tagCloudRef}
           className="tag-cloud"

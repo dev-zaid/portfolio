@@ -1,13 +1,13 @@
 import Image from "next/image";
 export default function Landing() {
   return (
-    <div className="flex item-center text-7xl font-black min-h-screen">
+    <div className="flex lg:item-center text-4xl md:text-6xl lg:text-7xl font-black min-h-screen">
       <div className="flex z-20">
-        <div className="flex items-end">
+        <div className="hidden w-[200px] md:w-[325px] md:flex items-end">
           <Image src={"/memoji.png"} alt="Zaid" width={500} height={500} />
         </div>
         <div className="flex flex-col justify-center items-center select-none">
-          <div className="m-24 cursor-default">
+          <div className="flex flex-col m-24 cursor-default">
             <div>
               {"Hi,".split("").map((letter) => (
                 <span
@@ -40,7 +40,7 @@ export default function Landing() {
                 </span>
               ))}
             </div>
-            <div>
+            <div className="flex-none">
               {"a".split("").map((letter) => (
                 <span
                   key={letter}

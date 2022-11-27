@@ -40,7 +40,7 @@ export default function NavBar() {
           />
         )}
       </div>
-      <div className="flex justify-end mx-10">
+      <div className="md:flex justify-end mx-10 hidden">
         <div className="flex justify-center items-center mx-4">
           <a href="#skills">
             <h3 className="hover:-translate-y-0.5 text-md md:text-xl cursor-pointer duration-200 hover:text-primary">
