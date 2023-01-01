@@ -36,7 +36,7 @@ const MemberCard = (props: cardProps) => {
       <p
         className={`${
           cloudShow ? "block" : "invisible"
-        } text-black mx-4 mb-2 relative -top-[30px] left-[10px] mt-1 text-[10px] w-4/5`}
+        } text-black mx-4 mb-2 relative -top-[30px] left-[18px] mt-1 text-[10px] w-4/5`}
       >
         {props.name}
       </p>

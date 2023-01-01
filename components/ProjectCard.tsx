@@ -24,7 +24,7 @@ const ProjectCard = (props: Project) => {
           return (
             <span
               key={i}
-              className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:text-white hover:bg-primary"
+              className="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2"
             >
               {skill}
             </span>
