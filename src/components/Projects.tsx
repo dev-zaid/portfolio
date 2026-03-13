@@ -35,6 +35,21 @@ export function Projects() {
         <div className="absolute top-0 bottom-0 left-[5%] md:left-[10%] w-px bg-white/5"></div>
         <div className="absolute top-0 bottom-0 right-[5%] md:right-[10%] w-px bg-white/5"></div>
         
+        {/* Animated Neon Line on Left */}
+        <motion.div 
+          className="absolute top-0 left-[5%] md:left-[10%] w-[2px] h-[20vh] bg-gradient-to-b from-transparent via-brand-accent to-transparent select-none"
+          animate={{
+            y: ["-20vh", "120vh"],
+            opacity: [0, 1, 1, 0]
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "linear",
+            delay: 4 // Offset delay for staggered effect
+          }}
+        />
+
         {/* Animated Neon Line on Right */}
         <motion.div 
           className="absolute top-0 right-[5%] md:right-[10%] w-[2px] h-[20vh] bg-gradient-to-b from-transparent via-brand-accent to-transparent select-none"
