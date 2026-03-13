@@ -46,8 +46,8 @@ export function Experience() {
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-brand-black to-transparent pointer-events-none"></div>
       <div className="neon-path"></div>
       <div className="container mx-auto px-6 relative py-16">
-        <div className="text-center w-full z-40 mb-12">
-          <h2 className="text-brand-accent text-xs font-bold uppercase tracking-[0.4em] mb-4">
+        <div className="text-center w-full z-40 mb-36 ">
+          <h2 className="text-brand-accent text-xs font-bold uppercase tracking-[0.6em] mb-4">
             02. Career
           </h2>
           <h3 className="text-4xl font-heading font-bold">Professional Journey</h3>
@@ -56,11 +56,11 @@ export function Experience() {
         {experiences.map((exp, index) => {
           const isLeft = index % 2 === 0;
           return (
-            <div key={index} className="exp-focus-wrapper my-8" style={{ perspective: "1000px" }}>
+            <div key={index} className="exp-focus-wrapper my-36" style={{ perspective: "10000px" }}>
               <motion.div
                 initial={{ opacity: 0.2, filter: "blur(8px)", scale: 0.85, x: isLeft ? -10 : 10 }}
-                whileInView={{ opacity: 1, filter: "blur(0px)", scale: 1, x: 0 }}
-                viewport={{ once: false, amount: 0.5, margin: "-10% 0px -10% 0px" }}
+                whileInView={{ opacity: 1, filter: "blur(0px)", scale: 1.2, x: 0 }}
+                viewport={{ once: false, amount: 0.5, margin: "-20% 0px -20% 0px" }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className={`exp-content z-20 absolute w-full md:w-[45%] px-8 ${isLeft ? "left-0 text-right md:pr-16" : "right-0 text-left md:pl-16"}`}
               >
