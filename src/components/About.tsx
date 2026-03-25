@@ -67,16 +67,31 @@ export function About() {
           <div className="lg:col-span-6 space-y-16">
             
             <div className="space-y-8 text-lg md:text-xl text-white/60 font-light leading-relaxed">
-              <motion.p variants={itemVariants}>
-                I am a Blockchain & Protocol Engineer specializing in Go, Cosmos SDK/Evmos, and the EVM ecosystem. For over 2 years, I've been deep in the trenches building L1 systems and engineering high-throughput infrastructure.
+              <motion.p
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+                variants={itemVariants}
+              >
+                I build backend systems that don't flinch under pressure — Go, Python, and distributed architecture engineered to scale without asking permission.
               </motion.p>
-              
-              <motion.p variants={itemVariants}>
-                Currently, I lead the core protocol development for an Evmos-based chain. My day-to-day involves architecting dual staking mechanisms (token + NFT), writing EVM precompiles, and orchestrating complex epoch and validator logic across a live network of 100+ nodes.
+
+              <motion.p
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+                variants={itemVariants}
+              >
+                I've been leading the core backend development on live distributed networks for 1+ years: event-driven microservices, low-latency system components, and production infrastructure spanning 100+ nodes processing.
               </motion.p>
-              
-              <motion.p variants={itemVariants}>
-                My engineering philosophy is simple: systems shouldn't just work; they must scale effortlessly. I've designed, developed, and shipped production environments that reliably process up to 10M+ on-chain events every single day without breaking a sweat.
+
+              <motion.p
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-50px" }}
+                variants={itemVariants}
+              >
+                My roots are in Web3 infrastructure — high-stakes, always-on environments where fault tolerance isn't a feature, it's a baseline.
               </motion.p>
             </div>
 
@@ -90,15 +105,15 @@ export function About() {
                
                <div className="p-8 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-md hover:bg-white/[0.04] transition-colors group">
                  <div className="text-brand-accent font-orbitron text-4xl mb-4 font-bold group-hover:scale-105 transition-transform origin-left">100+</div>
-                 <div className="text-xs text-white/50 tracking-[0.2em] uppercase font-bold">Live Validator Nodes</div>
+                 <div className="text-xs text-white/50 tracking-[0.2em] uppercase font-bold">Live Network Nodes</div>
                </div>
 
                <div className="p-8 rounded-2xl md:col-span-2 bg-gradient-to-br from-brand-accent/10 to-transparent border border-brand-accent/20 backdrop-blur-md">
                  <div className="text-white tracking-[0.2em] uppercase font-bold text-xs mb-4">Core Stack</div>
                  <div className="flex flex-wrap gap-2 text-sm text-white/80">
                    <span className="px-3 py-1 bg-brand-black rounded-sm">Go</span>
-                   <span className="px-3 py-1 bg-brand-black rounded-sm">Cosmos SDK</span>
-                   <span className="px-3 py-1 bg-brand-black rounded-sm">EVM</span>
+                   <span className="px-3 py-1 bg-brand-black rounded-sm">Python</span>
+                   <span className="px-3 py-1 bg-brand-black rounded-sm">Kafka</span>
                    <span className="px-3 py-1 bg-brand-black rounded-sm">PostgreSQL</span>
                    <span className="px-3 py-1 bg-brand-black rounded-sm">Docker</span>
                  </div>

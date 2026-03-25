@@ -5,11 +5,11 @@ export function Experience() {
     {
       year: "2025 — PRESENT",
       company: "DEnergy Networks",
-      role: "Lead Blockchain Developer",
+      role: "Lead Software Engineer",
       details: [
-        "Implemented protocol-level dual staking (token + NFT) improving validator throughput by 30%.",
-        "Built EVM Go precompiles to expose staking/NFT primitives to smart contracts.",
-        "Led security audits with CertiK for 50K+ LOC with 98% test coverage.",
+        "Implemented high-throughput event processing layers, improving system validation speed by 30%.",
+        "Built core Go services to expose distributed state primitives to client applications.",
+        "Led system architecture reviews for 50K+ LOC with 98% test coverage.",
       ],
     },
     {
@@ -24,9 +24,9 @@ export function Experience() {
     {
       year: "2024",
       company: "Avex",
-      role: "Backend & Blockchain Developer",
+      role: "Backend Engineer",
       details: [
-        "Architected and launched an NFT Marketplace Indexer processing 1M+ daily transactions.",
+        "Architected and launched a distributed data indexer processing 1M+ daily transactions.",
         "Engineered User Positions Indexer achieving 18% faster data retrieval.",
       ],
     },
@@ -66,8 +66,8 @@ export function Experience() {
                   whileInView={{ opacity: 1, filter: "blur(0px)", scale: 1, x: 0 }}
                   viewport={{ once: false, amount: 0.3, margin: "-10% 0px -10% 0px" }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  className={`exp-content z-20 relative md:absolute w-[90%] md:w-[45%] p-6 md:p-8 bg-brand-gray/40 border border-brand-accent/10 backdrop-blur-lg shadow-2xl rounded-2xl mx-auto md:mx-0 ${
-                    isLeft ? "md:left-0 text-left md:text-right" : "md:right-0 text-left"
+                  className={`exp-content z-20 relative md:absolute w-[90%] md:w-[45%] p-6 md:p-8 bg-brand-gray/40 md:bg-transparent border border-brand-accent/10 md:border-transparent backdrop-blur-lg md:backdrop-blur-none shadow-2xl md:shadow-none rounded-2xl mx-auto md:mx-0 ${
+                    isLeft ? "md:left-0 text-left md:text-right md:pr-16" : "md:right-0 text-left md:pl-16"
                   }`}
                 >
                   <p className="inline-block text-brand-accent font-orbitron text-[10px] md:text-xs tracking-widest mb-3 bg-brand-accent/5 px-2 py-1 rounded">

@@ -1,29 +1,128 @@
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+
+function ProjectCard({ project, idx }: { project: any, idx: number }) {
+  const isEven = idx % 2 === 0;
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    if (project.images.length <= 1) return;
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % project.images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [project.images.length]);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.8 }}
+      className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-20 items-center group relative`}
+    >
+      {/* Connecting Line from center to image */}
+      <div className={`hidden lg:block absolute top-1/2 -translate-y-1/2 w-[10vw] h-px bg-white/10 z-0 ${isEven ? 'left-1/2' : 'right-1/2'}`}></div>
+      
+      {/* Project Image Box */}
+      <div className="w-full lg:w-3/5 relative overflow-hidden rounded-2xl bg-brand-gray/50 border border-white/5 aspect-[4/3] md:aspect-[16/9] lg:aspect-[4/3] z-10 group/image cursor-pointer">
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="w-full h-full relative"
+        >
+          {project.images.map((img: string, i: number) => (
+            <img 
+              key={i}
+              src={img} 
+              alt={`${project.title} - view ${i + 1}`} 
+              className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 
+                ${i === currentImageIndex 
+                  ? 'opacity-80 group-hover/image:opacity-100 filter grayscale group-hover/image:grayscale-0 scale-100' 
+                  : 'opacity-0 scale-105 pointer-events-none'
+                }`}
+            />
+          ))}
+          
+          {/* Progress dots for multiple images */}
+          {project.images.length > 1 && (
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+              {project.images.map((_: any, i: number) => (
+                <button 
+                  key={i}
+                  aria-label={`Go to slide ${i + 1}`}
+                  onClick={(e) => { e.stopPropagation(); setCurrentImageIndex(i); }}
+                  className={`h-1.5 rounded-full transition-all duration-500 ${i === currentImageIndex ? 'bg-brand-accent w-8' : 'bg-white/40 hover:bg-white/70 w-2'}`}
+                />
+              ))}
+            </div>
+          )}
+        </motion.div>
+        {/* Subtle overlay */}
+        <div className="absolute inset-0 bg-brand-black/20 group-hover/image:bg-transparent transition-colors duration-500 pointer-events-none"></div>
+      </div>
+
+      {/* Project Details */}
+      <div className="w-full lg:w-2/5 flex flex-col justify-center z-10">
+        <div className="flex items-center gap-4 mb-4">
+          <span className="text-brand-accent font-orbitron text-sm tracking-widest font-bold">0{idx + 1}</span>
+          <div className="h-px bg-white/10 flex-grow"></div>
+        </div>
+        
+        <h4 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6 group-hover:text-brand-accent transition-colors duration-300">
+          <a href={project.link} target="_blank" rel="noreferrer" className="flex items-center gap-3">
+            {project.title}
+            <span className="material-symbols-outlined text-transparent group-hover:text-brand-accent translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">turn_right</span>
+          </a>
+        </h4>
+        
+        <p className="text-white/60 text-lg leading-relaxed mb-8">
+          {project.desc}
+        </p>
+
+        <div className="flex flex-wrap gap-3">
+          {project.tech.map((t: string, i: number) => (
+            <span key={i} className="text-xs font-semibold text-white/90 tracking-wider border border-white/10 bg-white/5 shadow-inner px-4 py-2 rounded-full backdrop-blur-md hover:bg-white/10 transition-colors cursor-default">
+              {t}
+            </span>
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  );
+}
 
 export function Projects() {
   const projects = [
     {
       title: "Aptos NFT Marketplace Indexer",
       desc: "High-throughput blockchain indexer processing 10M+ daily events. Built with Go-based concurrency pipelines and horizontal scaling. Improved parsing algorithm complexity from O(n²) to O(n), increasing overall throughput by ~60%.",
-      tech: ["Golang", "PostgreSQL", "Aptos", "Concurrency Patterns"],
-      // High quality tech/abstract placeholder
-      image: "https://images.unsplash.com/photo-1639322537231-2f206e06af86?q=80&w=1600&auto=format&fit=crop", 
+      tech: ["Golang", "PostgreSQL"],
+      images: [
+        "/backend_indexer.png"
+      ], 
       link: "#",
     },
     {
       title: "PyREX Intelligent Payment System",
       desc: "AI-driven cross-border routing engine that minimizes liquidity slippage for global conversion and instant settlements. Built AI-based agents to analyze requests and dynamically split transaction amounts across exchange paths to optimize rates.",
-      tech: ["Python", "Go", "AI Agents", "Algorithms"],
-      // Abstract gradient/tech placeholder
-      image: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1600&auto=format&fit=crop",
+      tech: ["Python", "AI Agents", "Algorithms"],
+      images: [
+        "/Pyrex/project_pyrex.png",
+        "/Pyrex/pyrex-02.png"
+      ],
       link: "#",
     },
     {
       title: "OD Automation SRM",
       desc: "Enterprise leave management system handling 5,000+ concurrent users with automated CI/CD and secure authentication. Reduced processing time by 70% through digital signatures.",
       tech: ["Node.js", "Docker", "Security", "Full-stack"],
-      // Code/Data placeholder
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1600&auto=format&fit=crop",
+      images: [
+        "/OD ML Automation/Home page.png",
+        "/OD ML Automation/View all Applications.png",
+        "/OD ML Automation/View Application.png",
+        "/OD ML Automation/Create Application.png"
+      ],
       link: "#",
     },
   ];
@@ -46,7 +145,7 @@ export function Projects() {
             duration: 8,
             repeat: Infinity,
             ease: "linear",
-            delay: 4 // Offset delay for staggered effect
+            delay: 4
           }}
         />
 
@@ -92,66 +191,9 @@ export function Projects() {
         </div>
         
         <div className="space-y-32">
-          {projects.map((project, idx) => {
-            const isEven = idx % 2 === 0;
-            return (
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.8 }}
-                key={idx}
-                className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-20 items-center group relative`}
-              >
-                {/* Connecting Line from center to image */}
-                <div className={`hidden lg:block absolute top-1/2 -translate-y-1/2 w-[10vw] h-px bg-white/10 z-0 ${isEven ? 'left-1/2' : 'right-1/2'}`}></div>
-                
-                {/* Project Image Box */}
-                <div className="w-full lg:w-3/5 relative overflow-hidden rounded-2xl bg-brand-gray/50 border border-white/5 aspect-[4/3] md:aspect-[16/9] lg:aspect-[4/3] z-10">
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.7, ease: "easeOut" }}
-                    className="w-full h-full"
-                  >
-                    <img 
-                      src={project.image} 
-                      alt={project.title} 
-                      className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 filter grayscale group-hover:grayscale-0"
-                    />
-                  </motion.div>
-                  {/* Subtle overlay */}
-                  <div className="absolute inset-0 bg-brand-black/20 group-hover:bg-transparent transition-colors duration-500 pointer-events-none"></div>
-                </div>
-
-                {/* Project Details */}
-                <div className="w-full lg:w-2/5 flex flex-col justify-center z-10">
-                  <div className="flex items-center gap-4 mb-4">
-                    <span className="text-brand-accent font-orbitron text-sm tracking-widest font-bold">0{idx + 1}</span>
-                    <div className="h-px bg-white/10 flex-grow"></div>
-                  </div>
-                  
-                  <h4 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6 group-hover:text-brand-accent transition-colors duration-300">
-                    <a href={project.link} target="_blank" rel="noreferrer" className="flex items-center gap-3">
-                      {project.title}
-                      <span className="material-symbols-outlined text-transparent group-hover:text-brand-accent translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">turn_right</span>
-                    </a>
-                  </h4>
-                  
-                  <p className="text-white/60 text-lg leading-relaxed mb-8">
-                    {project.desc}
-                  </p>
-
-                  <div className="flex flex-wrap gap-3">
-                    {project.tech.map((t, i) => (
-                      <span key={i} className="text-xs font-semibold text-white/90 tracking-wider border border-white/10 bg-white/5 shadow-inner px-4 py-2 rounded-full backdrop-blur-md hover:bg-white/10 transition-colors cursor-default">
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            );
-          })}
+          {projects.map((project, idx) => (
+            <ProjectCard key={idx} project={project} idx={idx} />
+          ))}
         </div>
       </div>
     </section>

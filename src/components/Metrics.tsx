@@ -16,7 +16,7 @@ export function Metrics() {
               100+
             </p>
             <p className="text-[10px] font-bold uppercase tracking-widest opacity-60 mt-3">
-              Nodes Managed
+              Servers Managed
             </p>
           </div>
           <div className="text-center text-brand-black">
@@ -32,7 +32,7 @@ export function Metrics() {
               3
             </p>
             <p className="text-[10px] font-bold uppercase tracking-widest opacity-60 mt-3">
-              Awards Won
+              Hackathons Won
             </p>
           </div>
         </div>

@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 export function Skills() {
   const row1 = ["GoLang", "TypeScript", "Python", "Solidity", "C++", "Cosmos SDK"];
-  const row2 = ["EVM", "Smart Contracts", "Layer 1 Infra", "NFT Standards", "Microservices"];
-  const row3 = ["gRPC", "WebSockets", "Event-driven", "PostgreSQL", "Redis", "Docker", "AWS"];
+  const row2 = ["EVM", "Smart Contracts", "NFT Standards", "Microservices"];
+  const row3 = ["gRPC", "WebSockets", "PostgreSQL", "Redis", "Docker", "AWS"];
 
   const MarqueeRow = ({ items, direction = 1 }: { items: string[]; direction?: number }) => {
     return (
