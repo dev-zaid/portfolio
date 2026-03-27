@@ -25,18 +25,21 @@ function ProjectCard({ project, idx }: { project: any, idx: number }) {
       <div className={`hidden lg:block absolute top-1/2 -translate-y-1/2 w-[10vw] h-px bg-white/10 z-0 ${isEven ? 'left-1/2' : 'right-1/2'}`}></div>
       
       {/* Project Image Box */}
-      <div className="w-full lg:w-3/5 relative overflow-hidden rounded-2xl bg-brand-gray/50 border border-white/5 aspect-[4/3] md:aspect-[16/9] lg:aspect-[4/3] z-10 group/image cursor-pointer">
+      <div className="w-full lg:w-3/5 relative overflow-hidden rounded-2xl bg-brand-gray/50 border border-white/5 aspect-[4/3] lg:aspect-video z-10 group/image cursor-pointer p-4 md:p-6 lg:p-8 flex flex-col justify-center">
+        {/* Subtle overlay */}
+        <div className="absolute inset-0 bg-brand-black/20 group-hover/image:bg-transparent transition-colors duration-500 pointer-events-none z-0"></div>
+        
         <motion.div
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="w-full h-full relative"
+          className="relative w-full h-full z-10 flex items-center justify-center"
         >
           {project.images.map((img: string, i: number) => (
             <img 
               key={i}
               src={img} 
               alt={`${project.title} - view ${i + 1}`} 
-              className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 
+              className={`absolute inset-0 m-auto max-w-full max-h-full rounded-xl shadow-[0_0_30px_rgba(0,0,0,0.5)] ring-1 ring-white/10 transition-all duration-1000 
                 ${i === currentImageIndex 
                   ? 'opacity-80 group-hover/image:opacity-100 filter grayscale group-hover/image:grayscale-0 scale-100' 
                   : 'opacity-0 scale-105 pointer-events-none'
@@ -46,20 +49,18 @@ function ProjectCard({ project, idx }: { project: any, idx: number }) {
           
           {/* Progress dots for multiple images */}
           {project.images.length > 1 && (
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+            <div className="absolute -bottom-2 md:bottom-2 left-1/2 -translate-x-1/2 flex gap-3 z-20">
               {project.images.map((_: any, i: number) => (
                 <button 
                   key={i}
                   aria-label={`Go to slide ${i + 1}`}
                   onClick={(e) => { e.stopPropagation(); setCurrentImageIndex(i); }}
-                  className={`h-1.5 rounded-full transition-all duration-500 ${i === currentImageIndex ? 'bg-brand-accent w-8' : 'bg-white/40 hover:bg-white/70 w-2'}`}
+                  className={`h-1.5 rounded-full transition-all duration-500 shadow-black ${i === currentImageIndex ? 'bg-brand-accent w-8' : 'bg-white/60 hover:bg-white w-2'}`}
                 />
               ))}
             </div>
           )}
         </motion.div>
-        {/* Subtle overlay */}
-        <div className="absolute inset-0 bg-brand-black/20 group-hover/image:bg-transparent transition-colors duration-500 pointer-events-none"></div>
       </div>
 
       {/* Project Details */}
