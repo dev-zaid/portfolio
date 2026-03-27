@@ -116,7 +116,7 @@ export function Projects() {
     {
       title: "OD Automation SRM",
       desc: "Enterprise leave management system handling 5,000+ concurrent users with automated CI/CD and secure authentication. Reduced processing time by 70% through digital signatures.",
-      tech: ["Node.js", "Docker", "Security", "Full-stack"],
+      tech: ["Node.js", "TypeScript", "Docker", "Mongo DB"],
       images: [
         "/OD ML Automation/Home page.png",
         "/OD ML Automation/View all Applications.png",

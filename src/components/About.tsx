@@ -73,7 +73,7 @@ export function About() {
                 viewport={{ once: true, margin: "-50px" }}
                 variants={itemVariants}
               >
-                I build backend systems that don't flinch under pressure — Go, Python, and distributed architecture engineered to scale without asking permission.
+                I specialize in building robust backend systems that excel under pressure—leveraging Go, TypeScript, and scalable distributed architectures to deliver reliable, high-performance solutions.
               </motion.p>
 
               <motion.p
@@ -112,8 +112,8 @@ export function About() {
                  <div className="text-white tracking-[0.2em] uppercase font-bold text-xs mb-4">Core Stack</div>
                  <div className="flex flex-wrap gap-2 text-sm text-white/80">
                    <span className="px-3 py-1 bg-brand-black rounded-sm">Go</span>
+                   <span className="px-3 py-1 bg-brand-black rounded-sm">TypeScript</span>
                    <span className="px-3 py-1 bg-brand-black rounded-sm">Python</span>
-                   <span className="px-3 py-1 bg-brand-black rounded-sm">Kafka</span>
                    <span className="px-3 py-1 bg-brand-black rounded-sm">PostgreSQL</span>
                    <span className="px-3 py-1 bg-brand-black rounded-sm">Docker</span>
                  </div>
