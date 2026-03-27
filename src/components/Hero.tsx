@@ -81,7 +81,7 @@ export function Hero() {
         >
           {/* Single, massive minimal text */}
           <span 
-            className="text-[55vw] md:text-[350px] lg:text-[500px] font-sans font-bold tracking-tighter leading-none text-transparent select-none whitespace-nowrap opacity-20"
+            className="text-[55vw] md:text-[350px] lg:text-[500px] font-hero-bg tracking-tighter leading-none text-transparent select-none whitespace-nowrap opacity-20"
             style={{
               WebkitTextStroke: '1px rgba(255, 255, 255, 0.5)',
             }}

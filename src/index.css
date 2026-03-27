@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'RollandinEmilie';
+  src: url('/fonts/rollandinemilie/RollandinEmilie.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @theme {
   --color-brand-black: #0a0a0a;
   --color-brand-darker: #050505;
@@ -9,6 +16,7 @@
   --font-sans: "Inter", sans-serif;
   --font-heading: "Space Grotesk", sans-serif;
   --font-orbitron: "Orbitron", sans-serif;
+  --font-hero-bg: 'RollandinEmilie', sans-serif;
 }
 
 @layer base {
