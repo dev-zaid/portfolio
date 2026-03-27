@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export function Experience() {
   const experiences = [
     {
-      year: "2025 — PRESENT",
+      year: "Jan 2025 — PRESENT",
       company: "DEnergy Networks",
       role: "Lead Software Engineer",
       details: [
@@ -13,7 +13,7 @@ export function Experience() {
       ],
     },
     {
-      year: "2024 — 2025",
+      year: "Dec 2024 — June 2025",
       company: "Trench",
       role: "Founding Full-Stack Engineer",
       details: [
@@ -22,7 +22,7 @@ export function Experience() {
       ],
     },
     {
-      year: "2024",
+      year: "Sept 2024 - Nov 2024",
       company: "Avex",
       role: "Backend Engineer",
       details: [
@@ -31,7 +31,7 @@ export function Experience() {
       ],
     },
     {
-      year: "2023 — 2024",
+      year: "Aug 2023 — July 2024",
       company: "Mable",
       role: "Software Development Engineer",
       details: [
