@@ -50,14 +50,14 @@ export function About() {
               variants={itemVariants}
               className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight text-white mb-8 pr-4"
             >
-              I build high-performance <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-white">distributed systems</span> and secure protocols.
+              I ship <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-white">AI agents</span> into the messy, real systems customers already run.
             </motion.h3>
             
             <motion.div variants={itemVariants} className="hidden lg:flex items-center gap-4 mt-12 opacity-50">
                <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center animate-[spin_10s_linear_infinite]">
                  <div className="w-1 h-1 bg-brand-accent rounded-full absolute top-1"></div>
                </div>
-               <span className="text-sm font-orbitron tracking-widest uppercase">System Active</span>
+               <span className="text-sm font-orbitron tracking-widest uppercase">Now: Agentic Commerce</span>
             </motion.div>
           </div>
 
@@ -73,7 +73,7 @@ export function About() {
                 viewport={{ once: true, margin: "-50px" }}
                 variants={itemVariants}
               >
-                I specialize in building robust backend systems that excel under pressure—leveraging Go, TypeScript, and scalable distributed architectures to deliver reliable, high-performance solutions.
+                Right now I'm focused on agentic commerce: researching how AI agents find, compare and buy from online stores, and auditing existing ecommerce stores for agent readiness, from product data to checkout flows an agent can actually complete.
               </motion.p>
 
               <motion.p
@@ -82,7 +82,7 @@ export function About() {
                 viewport={{ once: true, margin: "-50px" }}
                 variants={itemVariants}
               >
-                I've been leading the core backend development on live distributed networks for 1+ years: event-driven microservices, low-latency system components, and production infrastructure spanning 100+ nodes processing.
+                Before this I spent three years shipping production software in Go, TypeScript and Python. I was the founding full-stack engineer at a real-time trading startup, built ad-platform data pipelines, and ran backend services across 100+ live nodes.
               </motion.p>
 
               <motion.p
@@ -91,7 +91,7 @@ export function About() {
                 viewport={{ once: true, margin: "-50px" }}
                 variants={itemVariants}
               >
-                My roots are in Web3 infrastructure — high-stakes, always-on environments where fault tolerance isn't a feature, it's a baseline.
+                That is the forward deployed part: sit with the people who have the problem, scope it with them, integrate with whatever they already run, and stay until it works in production.
               </motion.p>
             </div>
 
@@ -99,21 +99,22 @@ export function About() {
             <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-2 gap-4">
                
                <div className="p-8 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-md hover:bg-white/[0.04] transition-colors group">
-                 <div className="text-brand-accent font-orbitron text-4xl mb-4 font-bold group-hover:scale-105 transition-transform origin-left">10M+</div>
-                 <div className="text-xs text-white/50 tracking-[0.2em] uppercase font-bold">Daily Events Processed</div>
+                 <div className="text-brand-accent font-orbitron text-4xl mb-4 font-bold group-hover:scale-105 transition-transform origin-left">0 → 1</div>
+                 <div className="text-xs text-white/50 tracking-[0.2em] uppercase font-bold">Founding Engineer, Trench</div>
                </div>
                
                <div className="p-8 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-md hover:bg-white/[0.04] transition-colors group">
-                 <div className="text-brand-accent font-orbitron text-4xl mb-4 font-bold group-hover:scale-105 transition-transform origin-left">100+</div>
-                 <div className="text-xs text-white/50 tracking-[0.2em] uppercase font-bold">Live Network Nodes</div>
+                 <div className="text-brand-accent font-orbitron text-4xl mb-4 font-bold group-hover:scale-105 transition-transform origin-left">1K+</div>
+                 <div className="text-xs text-white/50 tracking-[0.2em] uppercase font-bold">Concurrent Users, Sub-100ms</div>
                </div>
 
                <div className="p-8 rounded-2xl md:col-span-2 bg-gradient-to-br from-brand-accent/10 to-transparent border border-brand-accent/20 backdrop-blur-md">
                  <div className="text-white tracking-[0.2em] uppercase font-bold text-xs mb-4">Core Stack</div>
                  <div className="flex flex-wrap gap-2 text-sm text-white/80">
-                   <span className="px-3 py-1 bg-brand-black rounded-sm">Go</span>
-                   <span className="px-3 py-1 bg-brand-black rounded-sm">TypeScript</span>
                    <span className="px-3 py-1 bg-brand-black rounded-sm">Python</span>
+                   <span className="px-3 py-1 bg-brand-black rounded-sm">TypeScript</span>
+                   <span className="px-3 py-1 bg-brand-black rounded-sm">Go</span>
+                   <span className="px-3 py-1 bg-brand-black rounded-sm">AI Agents</span>
                    <span className="px-3 py-1 bg-brand-black rounded-sm">PostgreSQL</span>
                    <span className="px-3 py-1 bg-brand-black rounded-sm">Docker</span>
                  </div>

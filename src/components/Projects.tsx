@@ -96,18 +96,9 @@ function ProjectCard({ project, idx }: { project: any, idx: number }) {
 export function Projects() {
   const projects = [
     {
-      title: "Aptos NFT Marketplace Indexer",
-      desc: "High-throughput blockchain indexer processing 10M+ daily events. Built with Go-based concurrency pipelines and horizontal scaling. Improved parsing algorithm complexity from O(n²) to O(n), increasing overall throughput by ~60%.",
-      tech: ["Golang", "PostgreSQL"],
-      images: [
-        "/backend_indexer.png"
-      ], 
-      link: "#",
-    },
-    {
-      title: "PyREX Intelligent Payment System",
-      desc: "AI-driven cross-border routing engine that minimizes liquidity slippage for global conversion and instant settlements. Built AI-based agents to analyze requests and dynamically split transaction amounts across exchange paths to optimize rates.",
-      tech: ["Python", "AI Agents", "Algorithms"],
+      title: "PyREX Agentic Payments",
+      desc: "Agent-driven routing for cross-border payments. AI agents read each payment request and split the amount across exchange paths in real time, weighing liquidity, price and availability to cut conversion loss. Includes agent-managed orderbook matching and settlement.",
+      tech: ["Python", "AI Agents", "Payment Routing"],
       images: [
         "/Pyrex/project_pyrex.png",
         "/Pyrex/pyrex-02.png"
@@ -116,13 +107,22 @@ export function Projects() {
     },
     {
       title: "OD Automation SRM",
-      desc: "Enterprise leave management system handling 5,000+ concurrent users with automated CI/CD and secure authentication. Reduced processing time by 70% through digital signatures.",
+      desc: "Led a team of 4 to digitize SRM's leave approval workflow for 5,000+ users. Digital signatures cut processing time by 70%, CI/CD took releases from 2 hours to 15 minutes, and we shipped 2 weeks early.",
       tech: ["Node.js", "TypeScript", "Docker", "Mongo DB"],
       images: [
         "/OD ML Automation/Home page.png",
         "/OD ML Automation/View all Applications.png",
         "/OD ML Automation/View Application.png",
         "/OD ML Automation/Create Application.png"
+      ],
+      link: "#",
+    },
+    {
+      title: "Real-Time Event Indexer",
+      desc: "Indexer for an Aptos NFT marketplace processing 10M+ events a day. Go worker pools and batching lifted throughput ~60%, and rewriting the parser from O(n²) to O(n) cut CPU cost.",
+      tech: ["Golang", "PostgreSQL"],
+      images: [
+        "/backend_indexer.png"
       ],
       link: "#",
     },
@@ -187,7 +187,7 @@ export function Projects() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-6xl font-heading font-bold"
           >
-            Core Infrastructure & Applications
+            From Prototype to Production
           </motion.h3>
         </div>
         

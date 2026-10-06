@@ -1,0 +1,12 @@
+# Mohd Zaid
+
+> Forward deployed engineer focused on agentic commerce: researching how AI agents find, compare and buy from online stores, and auditing ecommerce stores for agent readiness.
+
+Background: three years shipping production software in Go, TypeScript and Python. Founding full-stack engineer at Trench (real-time trading, 1,000+ concurrent users, sub-100ms). Backend engineer at DEnergy Networks, Avex and Mable.
+
+## Links
+
+- [Resume](/resume.pdf)
+- [GitHub](https://github.com/dev-zaid)
+- [LinkedIn](https://linkedin.com/in/dev-zaid)
+- Email: mohdzaid2904@gmail.com

@@ -5,9 +5,12 @@ export function Contact() {
         <h2 className="text-brand-accent text-xs font-bold uppercase tracking-[0.4em] mb-6">
           05. Connect
         </h2>
-        <h3 className="text-5xl md:text-8xl font-heading font-extrabold mb-16 tracking-tighter">
+        <h3 className="text-5xl md:text-8xl font-heading font-extrabold mb-8 tracking-tighter">
           Let's Build Something.
         </h3>
+        <p className="text-lg md:text-xl text-white/60 font-light max-w-2xl mx-auto mb-16">
+          Hiring for a forward deployed role, or want to know how your store looks to an AI agent? Get in touch.
+        </p>
         <a
           className="text-2xl md:text-4xl font-light hover:text-brand-accent transition-all duration-500 border-b-2 border-brand-accent/30 hover:border-brand-accent pb-4"
           href="mailto:mohdzaid2904@gmail.com"

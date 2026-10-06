@@ -112,11 +112,11 @@ export function Hero() {
           <Typewriter text="Mohd Zaid" speed={50} cursor="|" delay={3000} />
         </div>
         
-        <h1 className="text-5xl md:text-8xl font-heading font-bold mb-4 tracking-tighter drop-shadow-2xl h-24 md:h-32 flex items-center justify-center">
-          <Typewriter text="Software Engineer." speed={70} delay={100} cursor="" />
+        <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-heading font-bold mb-4 tracking-tighter drop-shadow-2xl h-24 md:h-32 flex items-center justify-center">
+          <Typewriter text="Forward Deployed Engineer." speed={70} delay={100} cursor="" />
         </h1>
         
-        {/* Reverted original design for "I build systems that scale" */}
+        
         <motion.div
            initial={{ opacity: 0, y: 10 }}
            animate={{ opacity: 1, y: 0 }}
@@ -124,7 +124,7 @@ export function Hero() {
            className="mt-2"
         >
           <p className="text-lg md:text-xl text-white/60 font-light tracking-[0.3em] uppercase drop-shadow-md">
-            I build systems that <span className="text-brand-accent font-bold">scale</span>.
+            Making commerce <span className="text-brand-accent font-bold">agent-ready</span>.
           </p>
         </motion.div>
       </div>

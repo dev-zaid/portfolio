@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
 export function Skills() {
-  const row1 = ["GoLang", "TypeScript", "Python", "Solidity", "C++", "Cosmos SDK"];
-  const row2 = ["EVM", "Smart Contracts", "NFT Standards", "Microservices"];
-  const row3 = ["gRPC", "WebSockets", "PostgreSQL", "Redis", "Docker", "AWS"];
+  const row1 = ["Python", "TypeScript", "Go", "AI Agents", "Tool Calling", "MCP"];
+  const row2 = ["Agentic Commerce", "Agent Readiness Audits", "Structured Data", "API Integrations"];
+  const row3 = ["PostgreSQL", "Redis", "Docker", "AWS", "gRPC", "WebSockets"];
 
   const MarqueeRow = ({ items, direction = 1 }: { items: string[]; direction?: number }) => {
     return (
@@ -48,7 +48,7 @@ export function Skills() {
         <h2 className="text-brand-accent text-xs font-bold uppercase tracking-[0.4em] mb-4">
           04. Capabilities
         </h2>
-        <h3 className="text-4xl md:text-5xl font-heading font-bold">Technical Arsenal</h3>
+        <h3 className="text-4xl md:text-5xl font-heading font-bold">Toolkit</h3>
       </div>
 
       <div className="relative z-10 flex flex-col items-center rotate-[-2deg] my-12 w-[110%] -ml-[5%]">

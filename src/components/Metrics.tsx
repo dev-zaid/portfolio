@@ -5,26 +5,26 @@ export function Metrics() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="text-center text-brand-black">
             <p className="text-5xl font-orbitron font-extrabold tracking-tighter">
-              10M+
+              15M+
             </p>
             <p className="text-[10px] font-bold uppercase tracking-widest opacity-60 mt-3">
-              Daily Events
+              Daily Events Handled
             </p>
           </div>
           <div className="text-center text-brand-black">
             <p className="text-5xl font-orbitron font-extrabold tracking-tighter">
-              100+
+              5K+
             </p>
             <p className="text-[10px] font-bold uppercase tracking-widest opacity-60 mt-3">
-              Servers Managed
+              End Users Served
             </p>
           </div>
           <div className="text-center text-brand-black">
             <p className="text-5xl font-orbitron font-extrabold tracking-tighter">
-              98%
+              70%
             </p>
             <p className="text-[10px] font-bold uppercase tracking-widest opacity-60 mt-3">
-              Test Coverage
+              Faster Processing
             </p>
           </div>
           <div className="text-center text-brand-black">
