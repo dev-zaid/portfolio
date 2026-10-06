@@ -87,7 +87,7 @@
   @apply relative min-h-[25vh] flex items-center justify-center;
 }
 .exp-content {
-  @apply transition-all duration-1000 ease-out w-full md:w-[45%] px-8;
+  @apply w-full md:w-[45%] px-8;
 }
 .exp-content.left {
   @apply md:mr-auto text-right md:pr-16;
@@ -141,7 +141,4 @@
 ::-webkit-scrollbar-thumb {
   background: #aaff00;
   border-radius: 10px;
-}
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
 }

@@ -50,7 +50,7 @@ export function About() {
               variants={itemVariants}
               className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight text-white mb-8 pr-4"
             >
-              I ship <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-white">AI agents</span> into the messy, real systems customers already run.
+              I build <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-white">AI agents</span> and the production systems they run on.
             </motion.h3>
             
             <motion.div variants={itemVariants} className="hidden lg:flex items-center gap-4 mt-12 opacity-50">
@@ -73,7 +73,7 @@ export function About() {
                 viewport={{ once: true, margin: "-50px" }}
                 variants={itemVariants}
               >
-                I build AI agents and LLM-powered systems that do real work inside real businesses. My current project is in agentic commerce: researching how agents find, compare and buy from online stores, and auditing stores to see where agents get stuck.
+                These days that means LLM-powered agents doing real work inside real businesses. My current project is in agentic commerce: researching how agents find, compare and buy from online stores, and auditing stores to see where agents get stuck.
               </motion.p>
 
               <motion.p

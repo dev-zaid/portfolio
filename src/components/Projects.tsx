@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { CornerUpRight } from "lucide-react";
 
 function ProjectCard({ project, idx }: { project: any, idx: number }) {
   const isEven = idx % 2 === 0;
@@ -37,8 +38,10 @@ function ProjectCard({ project, idx }: { project: any, idx: number }) {
           {project.images.map((img: string, i: number) => (
             <img 
               key={i}
-              src={img} 
-              alt={`${project.title} - view ${i + 1}`} 
+              src={img}
+              alt={`${project.title} - view ${i + 1}`}
+              loading="lazy"
+              decoding="async"
               className={`absolute inset-0 m-auto max-w-full max-h-full rounded-xl shadow-[0_0_30px_rgba(0,0,0,0.5)] ring-1 ring-white/10 transition-all duration-1000 
                 ${i === currentImageIndex 
                   ? 'opacity-80 group-hover/image:opacity-100 filter grayscale group-hover/image:grayscale-0 scale-100' 
@@ -73,7 +76,7 @@ function ProjectCard({ project, idx }: { project: any, idx: number }) {
         <h4 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6 group-hover:text-brand-accent transition-colors duration-300">
           <a href={project.link} target="_blank" rel="noreferrer" className="flex items-center gap-3">
             {project.title}
-            <span className="material-symbols-outlined text-transparent group-hover:text-brand-accent translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">turn_right</span>
+            <CornerUpRight className="text-brand-accent translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300" />
           </a>
         </h4>
         
@@ -100,8 +103,8 @@ export function Projects() {
       desc: "Agent-driven routing for cross-border payments. AI agents read each payment request and split the amount across exchange paths in real time, weighing liquidity, price and availability to cut conversion loss. Includes agent-managed orderbook matching and settlement.",
       tech: ["Python", "AI Agents", "Payment Routing"],
       images: [
-        "/Pyrex/project_pyrex.png",
-        "/Pyrex/pyrex-02.png"
+        "/Pyrex/project_pyrex.webp",
+        "/Pyrex/pyrex-02.webp"
       ],
       link: "#",
     },
@@ -110,10 +113,10 @@ export function Projects() {
       desc: "Led a team of 4 to digitize SRM's leave approval workflow for 5,000+ users. Digital signatures cut processing time by 70%, CI/CD took releases from 2 hours to 15 minutes, and we shipped 2 weeks early.",
       tech: ["Node.js", "TypeScript", "Docker", "Mongo DB"],
       images: [
-        "/OD ML Automation/Home page.png",
-        "/OD ML Automation/View all Applications.png",
-        "/OD ML Automation/View Application.png",
-        "/OD ML Automation/Create Application.png"
+        "/OD ML Automation/Home page.webp",
+        "/OD ML Automation/View all Applications.webp",
+        "/OD ML Automation/View Application.webp",
+        "/OD ML Automation/Create Application.webp"
       ],
       link: "#",
     },

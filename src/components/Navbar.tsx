@@ -1,5 +1,6 @@
 import { motion, useScroll } from "framer-motion";
 import { useState, useEffect } from "react";
+import { Download } from "lucide-react";
 
 export function Navbar() {
   const { scrollY } = useScroll();
@@ -30,7 +31,7 @@ export function Navbar() {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      className="fixed top-0 left-0 w-full z-50 bg-brand-black/95 backdrop-blur-md border-b border-white/5 py-5"
+      className="fixed top-0 left-0 w-full z-50 bg-brand-black/95 border-b border-white/5 py-5"
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         <a className="flex items-center gap-3 group z-50" href="#">
@@ -72,7 +73,7 @@ export function Navbar() {
             download
             className="hidden sm:inline-flex items-center gap-2 px-4 py-2 border border-brand-accent/30 text-brand-accent text-[10px] font-orbitron font-bold tracking-[0.2em] uppercase hover:bg-brand-accent/10 transition-colors"
           >
-            <span className="material-symbols-outlined text-[14px]">download</span>
+            <Download size={14} strokeWidth={1.5} />
             Resume
           </a>
 

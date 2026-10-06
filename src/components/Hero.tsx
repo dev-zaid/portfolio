@@ -23,8 +23,9 @@ const AmbientGlows = () => {
         return (
           <motion.div
             key={i}
-            className="absolute rounded-full bg-brand-accent/20 mix-blend-screen blur-[100px]"
+            className="absolute rounded-full"
             style={{
+              background: "radial-gradient(circle, rgba(170, 255, 0, 0.2) 0%, transparent 70%)",
               width: size,
               height: size,
               left: `${left}%`,
@@ -101,7 +102,8 @@ export function Hero() {
           <img
             alt="Zaid Portrait"
             className="h-full w-auto max-w-none object-cover object-top grayscale"
-            src="/Portrait.png"
+            src="/Portrait.webp"
+            fetchPriority="high"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/20 to-transparent"></div>

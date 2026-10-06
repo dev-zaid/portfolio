@@ -74,7 +74,7 @@ export function Experience() {
                   whileInView={{ opacity: 1, filter: "blur(0px)", scale: 1, x: 0 }}
                   viewport={{ once: false, amount: 0.3, margin: "-10% 0px -10% 0px" }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
-                  className={`group exp-content z-20 relative md:absolute w-[90%] md:w-[45%] p-6 md:p-8 bg-brand-gray/40 md:bg-transparent border border-brand-accent/10 md:border-transparent backdrop-blur-lg md:backdrop-blur-none shadow-2xl md:shadow-none rounded-2xl mx-auto md:mx-0 transition-all duration-500 hover:bg-brand-gray/60 md:hover:bg-brand-darker/50 hover:-translate-y-2 ${
+                  className={`group exp-content z-20 relative md:absolute w-[90%] md:w-[45%] p-6 md:p-8 bg-brand-gray/40 md:bg-transparent border border-brand-accent/10 md:border-transparent backdrop-blur-lg md:backdrop-blur-none shadow-2xl md:shadow-none rounded-2xl mx-auto md:mx-0 transition-[background-color,translate] duration-500 hover:bg-brand-gray/60 md:hover:bg-brand-darker/50 hover:-translate-y-2 ${
                     isLeft ? "md:left-0 text-left md:text-right md:pr-16" : "md:right-0 text-left md:pl-16"
                   }`}
                 >

@@ -17,7 +17,7 @@ export function Skills() {
           {[...items, ...items, ...items, ...items].map((skill, idx) => (
             <div
               key={idx}
-              className="mx-4 text-2xl md:text-4xl font-heading font-bold text-white/30 hover:text-brand-accent hover:text-glow transition-all duration-300 cursor-default px-6 py-4 bg-white/[0.02] border border-white/5 rounded-full backdrop-blur-sm shrink-0"
+              className="mx-4 text-2xl md:text-4xl font-heading font-bold text-white/30 hover:text-brand-accent hover:text-glow transition-all duration-300 cursor-default px-6 py-4 bg-white/[0.02] border border-white/5 rounded-full shrink-0"
               style={{
                 textShadow: "0 0 0px transparent",
               }}
