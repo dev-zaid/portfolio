@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 export function Skills() {
-  const row1 = ["Python", "TypeScript", "Go", "AI Agents", "Tool Calling", "MCP"];
-  const row2 = ["Agentic Commerce", "Agent Readiness Audits", "Structured Data", "API Integrations"];
+  const row1 = ["Python", "TypeScript", "Go", "LLMs", "AI Agents", "Tool Calling"];
+  const row2 = ["MCP", "Agentic Workflows", "Structured Data", "API Integrations"];
   const row3 = ["PostgreSQL", "Redis", "Docker", "AWS", "gRPC", "WebSockets"];
 
   const MarqueeRow = ({ items, direction = 1 }: { items: string[]; direction?: number }) => {

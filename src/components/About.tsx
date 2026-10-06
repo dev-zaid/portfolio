@@ -57,7 +57,7 @@ export function About() {
                <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center animate-[spin_10s_linear_infinite]">
                  <div className="w-1 h-1 bg-brand-accent rounded-full absolute top-1"></div>
                </div>
-               <span className="text-sm font-orbitron tracking-widest uppercase">Now: Agentic Commerce</span>
+               <span className="text-sm font-orbitron tracking-widest uppercase">Now: AI Agents</span>
             </motion.div>
           </div>
 
@@ -73,7 +73,7 @@ export function About() {
                 viewport={{ once: true, margin: "-50px" }}
                 variants={itemVariants}
               >
-                Right now I'm focused on agentic commerce: researching how AI agents find, compare and buy from online stores, and auditing existing ecommerce stores for agent readiness, from product data to checkout flows an agent can actually complete.
+                I build AI agents and LLM-powered systems that do real work inside real businesses. My current project is in agentic commerce: researching how agents find, compare and buy from online stores, and auditing stores to see where agents get stuck.
               </motion.p>
 
               <motion.p
@@ -91,7 +91,7 @@ export function About() {
                 viewport={{ once: true, margin: "-50px" }}
                 variants={itemVariants}
               >
-                That is the forward deployed part: sit with the people who have the problem, scope it with them, integrate with whatever they already run, and stay until it works in production.
+                That is how I work with AI too: sit with the people who have the problem, scope it with them, integrate with whatever they already run, and stay until it works in production.
               </motion.p>
             </div>
 

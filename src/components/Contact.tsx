@@ -9,7 +9,7 @@ export function Contact() {
           Let's Build Something.
         </h3>
         <p className="text-lg md:text-xl text-white/60 font-light max-w-2xl mx-auto mb-16">
-          Hiring for a forward deployed role, or want to know how your store looks to an AI agent? Get in touch.
+          Building something with AI and need it working in production? Get in touch.
         </p>
         <a
           className="text-2xl md:text-4xl font-light hover:text-brand-accent transition-all duration-500 border-b-2 border-brand-accent/30 hover:border-brand-accent pb-4"

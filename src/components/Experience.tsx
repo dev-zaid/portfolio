@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 export function Experience() {
   const experiences: Array<{year: string, company: string, role: string, details: string[], icon?: React.ReactNode, link?: string}> = [
     {
-      year: "Jan 2025 — PRESENT",
+      year: "Jan 2025 — Sept 2026",
       company: "DEnergy Networks",
       link: "https://d.energy",
       icon: <img src="/denergy_icon.png" alt="DEnergy Networks" className="h-14 w-auto object-contain" />,
       role: "Software Engineer, Backend Systems",
       details: [
-        "Own Go backend services running across 100+ live nodes, including production incident debugging.",
+        "Owned Go backend services running across 100+ live nodes, including production incident debugging.",
         "Partnered with external auditors (CertiK) on a 50K+ LOC security audit while holding 98% test coverage.",
-        "Work across QA, security and research teams in multiple time zones; shipped a ~30% throughput gain.",
+        "Worked across QA, security and research teams in multiple time zones; shipped a ~30% throughput gain.",
       ],
     },
     {
