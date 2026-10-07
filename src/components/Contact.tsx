@@ -3,7 +3,7 @@ export function Contact() {
     <section className="py-40 px-6 bg-brand-black text-center" id="contact">
       <div className="container mx-auto">
         <h2 className="text-brand-accent text-xs font-bold uppercase tracking-[0.4em] mb-6">
-          05. Connect
+          06. Connect
         </h2>
         <h3 className="text-5xl md:text-8xl font-heading font-extrabold mb-8 tracking-tighter">
           Let's Build Something.

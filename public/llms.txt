@@ -1,8 +1,14 @@
 # Mohd Zaid
 
-> Applied AI engineer. Builds AI agents and LLM-powered systems and ships them into production. Current project: agentic commerce, researching how AI agents shop and auditing ecommerce stores for agent readiness.
+> Applied AI engineer. Builds AI agents and LLM-powered systems and ships them into production. Currently at General Machines (https://generalmachines.ai/), researching agentic commerce: shopping agents, agent evals and Stripe checkout for live Shopify stores.
 
-Background: three years shipping production software in Go, TypeScript and Python. Currently working on General Machines (https://generalmachines.ai/), on agentic commerce. Founding engineer at Trench (real-time trading, 1,000+ concurrent users, sub-100ms) and DEnergy Networks (distributed systems, Jan 2025 to Sept 2026). Backend engineer at Avex and Mable.
+Background: 1+ year of professional experience since graduating in May 2025 (B.Tech CSE, SRM University). Through his final two years of college he built production software for startups in Go, TypeScript and Python, twice as a founding engineer: DEnergy Networks (Go, Cosmos SDK network taken from testnet to mainnet on 50+ nodes, Jan 2025 to Sept 2026) and Trench (real-time trading platform, zero to 1,000+ concurrent users at sub-100ms). Software development engineer intern at Mable.
+
+Fits: applied AI / AI engineer, forward deployed engineer, founding or early-stage engineer, backend (Go, Python, TypeScript), full-stack, distributed systems. Open to conversations about the right role: remote, anywhere in India, or abroad with visa sponsorship.
+
+## MCP server
+
+This site is also a remote MCP server (Streamable HTTP, no auth) at https://devzaid.in/mcp. Tools: get_profile, get_experience, list_projects, get_skills (each skill mapped to evidence), evaluate_job_fit (paste a job description), contact_zaid. Prompt: job_fit. Docs and live console: https://devzaid.in/agents
 
 ## Links
 

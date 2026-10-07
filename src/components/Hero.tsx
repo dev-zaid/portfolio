@@ -73,6 +73,20 @@ export function Hero() {
       id="hero"
     >
       <AmbientGlows />
+
+      <motion.a
+        href="/agents"
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 1 }}
+        className="absolute top-5 right-4 md:top-6 md:right-8 z-40 inline-flex items-center gap-2 px-3 py-2 border border-brand-accent/40 bg-brand-black/70 backdrop-blur text-white/80 text-[10px] font-orbitron font-bold tracking-[0.2em] uppercase hover:bg-brand-accent/10 hover:text-white transition-colors"
+      >
+        <span className="w-1.5 h-1.5 bg-brand-accent rounded-full animate-pulse"></span>
+        <span className="text-brand-accent">MCP</span>
+        <span className="hidden sm:inline">Connect your agent</span>
+        <span className="sm:hidden">Live</span>
+        <span className="text-brand-accent">→</span>
+      </motion.a>
       
       {/* Background Typography - Ultra Minimal Watermark */}
       <div className="absolute inset-x-0 inset-y-[-20%] flex items-center justify-center z-10 pointer-events-none overflow-hidden" id="hero-bg-text">

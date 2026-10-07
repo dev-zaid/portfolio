@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
+import { skills } from "../data/portfolio.ts";
 
 export function Skills() {
-  const row1 = ["Python", "TypeScript", "Go", "LLMs", "AI Agents", "Tool Calling"];
-  const row2 = ["MCP", "UCP", "ACP", "AP2", "Stripe Agentic Payments", "Agentic Workflows"];
-  const row3 = ["Structured Data", "API Integrations", "PostgreSQL", "Redis", "Docker", "AWS", "gRPC", "WebSockets"];
 
   const MarqueeRow = ({ items, direction = 1 }: { items: string[]; direction?: number }) => {
     return (
@@ -52,9 +50,9 @@ export function Skills() {
       </div>
 
       <div className="relative z-10 flex flex-col items-center rotate-[-2deg] my-12 w-[110%] -ml-[5%]">
-        <MarqueeRow items={row1} direction={1} />
-        <MarqueeRow items={row2} direction={-1} />
-        <MarqueeRow items={row3} direction={1} />
+        {Object.values(skills).map((row, i) => (
+          <MarqueeRow key={i} items={row} direction={i % 2 ? -1 : 1} />
+        ))}
       </div>
 
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-brand-accent to-transparent pointer-events-none mix-blend-overlay opacity-20 z-10"></div>

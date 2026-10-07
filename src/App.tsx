@@ -5,6 +5,7 @@ import { Experience } from "./components/Experience.tsx";
 import { Projects } from "./components/Projects.tsx";
 import { Skills } from "./components/Skills.tsx";
 import { Metrics } from "./components/Metrics.tsx";
+import { AgentCallout } from "./components/AgentCallout.tsx";
 import { Contact } from "./components/Contact.tsx";
 import { Footer } from "./components/Footer.tsx";
 
@@ -18,6 +19,7 @@ function App() {
       <Projects />
       <Skills />
       <Metrics />
+      <AgentCallout />
       <Contact />
       <Footer />
     </>

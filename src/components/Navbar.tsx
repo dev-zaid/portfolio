@@ -2,6 +2,26 @@ import { motion, useScroll } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Download } from "lucide-react";
 
+export function Logo({ className }: { className?: string }) {
+  return (
+    <svg fill="none" height="100%" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <path d="M15 15L35 15L55 35L15 35Z" fill="#aaff00" fillOpacity="0.08"></path>
+      <path d="M85 15L65 15L45 35L85 35Z" fill="#aaff00" fillOpacity="0.12"></path>
+      <path d="M85 85L65 85L45 65L85 65Z" fill="#aaff00" fillOpacity="0.08"></path>
+      <path d="M15 85L35 85L55 65L15 65Z" fill="#aaff00" fillOpacity="0.12"></path>
+      <path d="M20 20H80" stroke="#aaff00" strokeLinecap="square" strokeWidth="6"></path>
+      <path d="M80 20L40 60" stroke="#aaff00" strokeDasharray="12 4" strokeWidth="6"></path>
+      <path d="M40 60L20 80" stroke="#aaff00" strokeLinecap="square" strokeWidth="6"></path>
+      <path d="M20 80H80" stroke="#aaff00" strokeLinecap="square" strokeWidth="6"></path>
+      <rect fill="#aaff00" height="6" width="6" x="17" y="17"></rect>
+      <rect fill="#aaff00" height="6" width="6" x="77" y="17"></rect>
+      <rect fill="#aaff00" height="6" width="6" x="77" y="77"></rect>
+      <rect fill="#aaff00" height="6" width="6" x="17" y="77"></rect>
+      <path d="M45 45L55 45L55 55L45 55Z" fill="#aaff00"></path>
+    </svg>
+  );
+}
+
 export function Navbar() {
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(true);
@@ -36,21 +56,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
         <a className="flex items-center gap-3 group z-50" href="#">
           <div className="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center relative">
-            <svg fill="none" height="100%" viewBox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg" className="transform group-hover:scale-105 transition-transform">
-              <path d="M15 15L35 15L55 35L15 35Z" fill="#aaff00" fillOpacity="0.08"></path>
-              <path d="M85 15L65 15L45 35L85 35Z" fill="#aaff00" fillOpacity="0.12"></path>
-              <path d="M85 85L65 85L45 65L85 65Z" fill="#aaff00" fillOpacity="0.08"></path>
-              <path d="M15 85L35 85L55 65L15 65Z" fill="#aaff00" fillOpacity="0.12"></path>
-              <path d="M20 20H80" stroke="#aaff00" strokeLinecap="square" strokeWidth="6"></path>
-              <path d="M80 20L40 60" stroke="#aaff00" strokeDasharray="12 4" strokeWidth="6"></path>
-              <path d="M40 60L20 80" stroke="#aaff00" strokeLinecap="square" strokeWidth="6"></path>
-              <path d="M20 80H80" stroke="#aaff00" strokeLinecap="square" strokeWidth="6"></path>
-              <rect fill="#aaff00" height="6" width="6" x="17" y="17"></rect>
-              <rect fill="#aaff00" height="6" width="6" x="77" y="17"></rect>
-              <rect fill="#aaff00" height="6" width="6" x="77" y="77"></rect>
-              <rect fill="#aaff00" height="6" width="6" x="17" y="77"></rect>
-              <path d="M45 45L55 45L55 55L45 55Z" fill="#aaff00"></path>
-            </svg>
+            <Logo className="transform group-hover:scale-105 transition-transform" />
           </div>
           <span className="text-white font-orbitron font-extrabold text-lg md:text-xl tracking-tighter group-hover:text-brand-accent transition-colors pt-1">
             ZAID
@@ -64,6 +70,7 @@ export function Navbar() {
           <a className="nav-link-bracket" href="#projects">Projects</a>
           <a className="nav-link-bracket" href="#skills">Skills</a>
           <a className="nav-link-bracket" href="#contact">Contact</a>
+          <a className="nav-link-bracket text-brand-accent" href="/agents">MCP</a>
         </div>
 
         {/* Right Side Actions & Indicator */}
