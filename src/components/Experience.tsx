@@ -9,7 +9,7 @@ export function Experience() {
       icon: <img src="/denergy_icon.png" alt="DEnergy Networks" className="h-14 w-auto object-contain" />,
       role: "Founding Engineer, Distributed Systems",
       details: [
-        "Owned Go backend services running across 100+ live nodes, including production incident debugging.",
+        "Owned Go backend services running across 50+ live nodes, including production incident debugging.",
         "Partnered with external auditors (CertiK) on a 50K+ LOC security audit while holding 98% test coverage.",
         "Worked across QA, security and research teams in multiple time zones; shipped a ~30% throughput gain.",
       ],

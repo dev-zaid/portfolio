@@ -82,7 +82,7 @@ export function About() {
                 viewport={{ once: true, margin: "-50px" }}
                 variants={itemVariants}
               >
-                Before this I spent three years shipping production software in Go, TypeScript and Python. I was a founding engineer twice: full-stack at Trench, a real-time trading platform, and distributed systems at DEnergy Networks, running services across 100+ live nodes.
+                Before this I spent three years shipping production software in Go, TypeScript and Python. I was a founding engineer twice: full-stack at Trench, a real-time trading platform, and distributed systems at DEnergy Networks, running services across 50+ live nodes.
               </motion.p>
 
               <motion.p
