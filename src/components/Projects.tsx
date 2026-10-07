@@ -109,7 +109,7 @@ export function Projects() {
       desc: "Data and evaluation infrastructure for frontier AI: datasets, evals and benchmarks for AI agents operating across the web, and for physical AI. I work on the agentic commerce side, measuring how agents find, compare and buy from real online stores.",
       tech: ["AI Agents", "Evals", "Agentic Commerce"],
       images: [
-        "/GeneralMachines/general_machines_dark.webp"
+        "/GeneralMachines/card.svg"
       ],
       link: "https://generalmachines.ai/",
       current: true,

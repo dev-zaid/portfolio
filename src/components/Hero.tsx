@@ -129,6 +129,22 @@ export function Hero() {
             I ship AI into <span className="text-brand-accent font-bold">production</span>.
           </p>
         </motion.div>
+
+        <motion.a
+          href="#projects"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 2.2, ease: "easeOut" }}
+          className="pointer-events-auto inline-flex items-center gap-3 mt-8 px-4 py-2 border border-brand-accent/30 bg-brand-black/60 text-white/70 text-[10px] font-orbitron font-bold tracking-[0.2em] uppercase hover:bg-brand-accent/10 hover:text-white transition-colors"
+        >
+          <span className="w-1.5 h-1.5 bg-brand-accent rounded-full animate-pulse"></span>
+          <span>
+            <span className="hidden sm:inline">Currently building at </span>
+            <span className="sm:hidden">Now at </span>
+            <span className="text-brand-accent">General Machines</span>
+          </span>
+          <span className="text-brand-accent">↓</span>
+        </motion.a>
       </div>
 
       <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-4">
