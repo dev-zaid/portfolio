@@ -71,6 +71,12 @@ function ProjectCard({ project, idx }: { project: any, idx: number }) {
         <div className="flex items-center gap-4 mb-4">
           <span className="text-brand-accent font-orbitron text-sm tracking-widest font-bold">0{idx + 1}</span>
           <div className="h-px bg-white/10 flex-grow"></div>
+          {project.current && (
+            <span className="flex items-center gap-2 text-brand-accent text-[10px] font-bold uppercase tracking-[0.3em]">
+              <span className="w-1.5 h-1.5 bg-brand-accent rounded-full animate-pulse"></span>
+              Currently Building
+            </span>
+          )}
         </div>
         
         <h4 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6 group-hover:text-brand-accent transition-colors duration-300">
@@ -98,6 +104,16 @@ function ProjectCard({ project, idx }: { project: any, idx: number }) {
 
 export function Projects() {
   const projects = [
+    {
+      title: "General Machines",
+      desc: "Data and evaluation infrastructure for frontier AI: datasets, evals and benchmarks for AI agents operating across the web, and for physical AI. I work on the agentic commerce side, measuring how agents find, compare and buy from real online stores.",
+      tech: ["AI Agents", "Evals", "Agentic Commerce"],
+      images: [
+        "/GeneralMachines/home.webp"
+      ],
+      link: "https://generalmachines.ai/",
+      current: true,
+    },
     {
       title: "PyREX Agentic Payments",
       desc: "Agent-driven routing for cross-border payments. AI agents read each payment request and split the amount across exchange paths in real time, weighing liquidity, price and availability to cut conversion loss. Includes agent-managed orderbook matching and settlement.",

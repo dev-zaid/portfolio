@@ -2,7 +2,7 @@
 
 > Applied AI engineer. Builds AI agents and LLM-powered systems and ships them into production. Current project: agentic commerce, researching how AI agents shop and auditing ecommerce stores for agent readiness.
 
-Background: three years shipping production software in Go, TypeScript and Python. Founding full-stack engineer at Trench (real-time trading, 1,000+ concurrent users, sub-100ms). Backend engineer at DEnergy Networks (Jan 2025 to Sept 2026), Avex and Mable.
+Background: three years shipping production software in Go, TypeScript and Python. Currently working on General Machines (https://generalmachines.ai/), on agentic commerce. Founding engineer at Trench (real-time trading, 1,000+ concurrent users, sub-100ms) and DEnergy Networks (distributed systems, Jan 2025 to Sept 2026). Backend engineer at Avex and Mable.
 
 ## Links
 

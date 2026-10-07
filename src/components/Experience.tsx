@@ -7,7 +7,7 @@ export function Experience() {
       company: "DEnergy Networks",
       link: "https://d.energy",
       icon: <img src="/denergy_icon.png" alt="DEnergy Networks" className="h-14 w-auto object-contain" />,
-      role: "Software Engineer, Backend Systems",
+      role: "Founding Engineer, Distributed Systems",
       details: [
         "Owned Go backend services running across 100+ live nodes, including production incident debugging.",
         "Partnered with external auditors (CertiK) on a 50K+ LOC security audit while holding 98% test coverage.",

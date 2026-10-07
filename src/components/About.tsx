@@ -73,7 +73,7 @@ export function About() {
                 viewport={{ once: true, margin: "-50px" }}
                 variants={itemVariants}
               >
-                These days that means LLM-powered agents doing real work inside real businesses. My current project is in agentic commerce: researching how agents find, compare and buy from online stores, and auditing stores to see where agents get stuck.
+                These days that means LLM-powered agents doing real work inside real businesses. I'm currently working on General Machines, on the agentic commerce side: researching how agents find, compare and buy from online stores, and auditing stores to see where agents get stuck.
               </motion.p>
 
               <motion.p
@@ -82,7 +82,7 @@ export function About() {
                 viewport={{ once: true, margin: "-50px" }}
                 variants={itemVariants}
               >
-                Before this I spent three years shipping production software in Go, TypeScript and Python. I was the founding full-stack engineer at a real-time trading startup, built ad-platform data pipelines, and ran backend services across 100+ live nodes.
+                Before this I spent three years shipping production software in Go, TypeScript and Python. I was a founding engineer twice: full-stack at Trench, a real-time trading platform, and distributed systems at DEnergy Networks, running services across 100+ live nodes.
               </motion.p>
 
               <motion.p
@@ -100,7 +100,7 @@ export function About() {
                
                <div className="p-8 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-md hover:bg-white/[0.04] transition-colors group">
                  <div className="text-brand-accent font-orbitron text-4xl mb-4 font-bold group-hover:scale-105 transition-transform origin-left">0 → 1</div>
-                 <div className="text-xs text-white/50 tracking-[0.2em] uppercase font-bold">Founding Engineer, Trench</div>
+                 <div className="text-xs text-white/50 tracking-[0.2em] uppercase font-bold">Founding Engineer, Trench & DEnergy</div>
                </div>
                
                <div className="p-8 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-md hover:bg-white/[0.04] transition-colors group">
