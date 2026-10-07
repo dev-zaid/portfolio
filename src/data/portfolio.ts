@@ -255,7 +255,7 @@ export const moreProjects = [
   {
     title: "This portfolio's MCP server",
     desc: "Remote MCP server (Streamable HTTP, TypeScript, MCP SDK) on Vercel: agents read his profile, evaluate job fit and send him rate-limited email.",
-    link: "https://devzaid.in/agents",
+    link: "https://www.devzaid.in/agents",
   },
   {
     title: "Datalync",

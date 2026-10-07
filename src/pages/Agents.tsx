@@ -6,7 +6,7 @@ import { Logo } from "../components/Navbar.tsx";
 import { Typewriter } from "../assets/test";
 import { profile } from "../data/portfolio.ts";
 
-const ENDPOINT = "https://devzaid.in/mcp";
+const ENDPOINT = "https://www.devzaid.in/mcp";
 const CLAUDE_CODE = `claude mcp add --transport http zaid ${ENDPOINT}`;
 const GEMINI_CLI = `gemini mcp add --transport http zaid ${ENDPOINT}`;
 const CURSOR_LINK = `cursor://anysphere.cursor-deeplink/mcp/install?name=zaid&config=${btoa(JSON.stringify({ url: ENDPOINT }))}`;
