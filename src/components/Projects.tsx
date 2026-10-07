@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { CornerUpRight } from "lucide-react";
+import { projects } from "../data/portfolio.ts";
 
-function ProjectCard({ project, idx }: { project: any, idx: number }) {
+function ProjectCard({ project, idx }: { project: (typeof projects)[number], idx: number }) {
   const isEven = idx % 2 === 0;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -53,7 +54,7 @@ function ProjectCard({ project, idx }: { project: any, idx: number }) {
           {/* Progress dots for multiple images */}
           {project.images.length > 1 && (
             <div className="absolute -bottom-2 md:bottom-2 left-1/2 -translate-x-1/2 flex gap-3 z-20">
-              {project.images.map((_: any, i: number) => (
+              {project.images.map((_, i) => (
                 <button 
                   key={i}
                   aria-label={`Go to slide ${i + 1}`}
@@ -103,50 +104,6 @@ function ProjectCard({ project, idx }: { project: any, idx: number }) {
 }
 
 export function Projects() {
-  const projects = [
-    {
-      title: "General Machines",
-      desc: "Data and evaluation infrastructure for frontier AI: datasets, evals and benchmarks for AI agents operating across the web, and for physical AI. I work on the agentic commerce side, measuring how agents find, compare and buy from real online stores.",
-      tech: ["AI Agents", "Evals", "Agentic Commerce"],
-      images: [
-        "/GeneralMachines/card.svg"
-      ],
-      link: "https://generalmachines.ai/",
-      current: true,
-    },
-    {
-      title: "PyREX Agentic Payments",
-      desc: "Agent-driven routing for cross-border payments. AI agents read each payment request and split the amount across exchange paths in real time, weighing liquidity, price and availability to cut conversion loss. Includes agent-managed orderbook matching and settlement.",
-      tech: ["Python", "AI Agents", "Payment Routing"],
-      images: [
-        "/Pyrex/project_pyrex.webp",
-        "/Pyrex/pyrex-02.webp"
-      ],
-      link: "#",
-    },
-    {
-      title: "OD Automation SRM",
-      desc: "Led a team of 4 to digitize SRM's leave approval workflow for 5,000+ users. Digital signatures cut processing time by 70%, CI/CD took releases from 2 hours to 15 minutes, and we shipped 2 weeks early.",
-      tech: ["Node.js", "TypeScript", "Docker", "Mongo DB"],
-      images: [
-        "/OD ML Automation/Home page.webp",
-        "/OD ML Automation/View all Applications.webp",
-        "/OD ML Automation/View Application.webp",
-        "/OD ML Automation/Create Application.webp"
-      ],
-      link: "#",
-    },
-    {
-      title: "Real-Time Event Indexer",
-      desc: "Indexer for an Aptos NFT marketplace processing 10M+ events a day. Go worker pools and batching lifted throughput ~60%, and rewriting the parser from O(n²) to O(n) cut CPU cost.",
-      tech: ["Golang", "PostgreSQL"],
-      images: [
-        "/backend_indexer.png"
-      ],
-      link: "#",
-    },
-  ];
-
   return (
     <section className="py-32 px-6 bg-brand-black relative z-20 overflow-hidden" id="projects">
       {/* Background Neon Elements */}

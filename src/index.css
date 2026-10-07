@@ -134,6 +134,7 @@
 }
 ::-webkit-scrollbar {
   width: 4px;
+  height: 4px;
 }
 ::-webkit-scrollbar-track {
   background: #0a0a0a;
@@ -142,3 +143,4 @@
   background: #aaff00;
   border-radius: 10px;
 }
+

@@ -1,4 +1,5 @@
 import { motion, Variants } from "framer-motion";
+import { profile } from "../data/portfolio.ts";
 
 export function About() {
   const containerVariants: Variants = {
@@ -67,32 +68,17 @@ export function About() {
           <div className="lg:col-span-6 space-y-16">
             
             <div className="space-y-8 text-lg md:text-xl text-white/60 font-light leading-relaxed">
-              <motion.p
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-50px" }}
-                variants={itemVariants}
-              >
-                These days that means LLM-powered agents doing real work inside real businesses. I'm currently working on General Machines, on the agentic commerce side: researching how agents find, compare and buy from online stores, and auditing stores to see where agents get stuck.
-              </motion.p>
-
-              <motion.p
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-50px" }}
-                variants={itemVariants}
-              >
-                Before this I spent three years shipping production software in Go, TypeScript and Python. I was a founding engineer twice: full-stack at Trench, a real-time trading platform, and distributed systems at DEnergy Networks, running services across 50+ live nodes.
-              </motion.p>
-
-              <motion.p
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-50px" }}
-                variants={itemVariants}
-              >
-                That is how I work with AI too: sit with the people who have the problem, scope it with them, integrate with whatever they already run, and stay until it works in production.
-              </motion.p>
+              {profile.about.map((para) => (
+                <motion.p
+                  key={para}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, margin: "-50px" }}
+                  variants={itemVariants}
+                >
+                  {para}
+                </motion.p>
+              ))}
             </div>
 
             {/* UI Aligned Stats Cards */}
