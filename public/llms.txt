@@ -8,7 +8,7 @@ Fits: applied AI / AI engineer, forward deployed engineer, founding or early-sta
 
 ## MCP server
 
-This site is also a remote MCP server (Streamable HTTP, no auth) at https://devzaid.in/mcp. Tools: get_profile, get_experience, list_projects, get_skills (each skill mapped to evidence), evaluate_job_fit (paste a job description), contact_zaid. Prompt: job_fit. Docs and live console: https://devzaid.in/agents
+This site is also a remote MCP server (Streamable HTTP, no auth) at https://www.devzaid.in/mcp. Tools: get_profile, get_experience, list_projects, get_skills (each skill mapped to evidence), evaluate_job_fit (paste a job description), contact_zaid. Prompt: job_fit. Docs and live console: https://www.devzaid.in/agents
 
 ## Links
 
